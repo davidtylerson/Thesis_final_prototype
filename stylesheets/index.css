@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 8, ../sass/index.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/index.scss */
+body, ul, li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 20, ../sass/index.scss */
+body {
+  font-size: 12px;
+  font-family: ubuntu, helvetica, arial;
+  background-color: black;
+  width: 1280px;
+  height: 800px;
+  border: 1px solid white;
+}
+
+/* line 33, ../sass/index.scss */
+#header {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background: #CD235C;
+  padding: 0;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 45, ../sass/index.scss */
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  height: 150px;
+  width: 560px;
+  overflow: hidden;
+  top: 30px;
+  left: 360px;
+  padding-top: 20px;
+}
+
+/* line 57, ../sass/index.scss */
+#scroller {
+  position: absolute;
+  z-index: 1;
+  width: 1180px;
+  height: 80px;
+}
+
+/* line 65, ../sass/index.scss */
+#scroller ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 72, ../sass/index.scss */
+#scroller li {
+  width: 80px;
+  height: 80px;
+  float: left;
+  overflow: hidden;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+/* line 81, ../sass/index.scss */
+#scroller li ~ li {
+  margin-left: 20px;
+}
+
+/* line 85, ../sass/index.scss */
+li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 93, ../sass/index.scss */
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+  -webkit-transition: all 500ms;
+  opacity: 0.5;
+}
+/* line 97, ../sass/index.scss */
+.one img, .two img, .three img, .four img, .five img, .six img, .seven img, .eight img, .nine img, .ten img {
+  width: 100%;
+  height: 100%;
+}
+/* line 102, ../sass/index.scss */
+.one.big, .two.big, .three.big, .four.big, .five.big, .six.big, .seven.big, .eight.big, .nine.big, .ten.big {
+  -webkit-transition: all 500ms;
+  -webkit-transform: scale(1.5);
+  opacity: 1;
+}

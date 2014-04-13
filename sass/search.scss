@@ -1,0 +1,299 @@
+	@import 'reset';
+
+	$backgroundcolor: black;
+	$foregroundcolor: white;
+	$glass-type-size: 35px;
+	$menuleftmargin:40px;
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	} 
+
+// Drink Tags ************************************************
+
+.drink-tag{
+	float: left;
+	position: relative;
+	width:140px;
+	height:55px;
+	margin-bottom:5px;
+
+	.glass-type{
+		display: inline-block;
+		float: right;
+		width: $glass-type-size;
+		height: $glass-type-size;
+		border-radius: $glass-type-size/2;
+		background-color:black;
+		z-index: 1;
+	}
+
+	.box{
+		position: absolute;
+		top: 10px;
+		width: 130px;
+		height: 45px;
+		border: 1px solid white;	
+		padding: 5px;
+		z-index: -1;
+
+		.name{
+			font-size: 12px;
+			color: $foregroundcolor;
+			font-family: "Gibson-SemiBold";
+			margin-top: 0;
+		}
+
+		p{	margin-top: 1px;
+			font-size: 10px;
+			color: $foregroundcolor;
+			font-family: "Gibson-Light";
+		}					
+	}
+}
+
+// Drink Tags ************************************************
+
+.results-menu {
+	position: absolute;
+	width: 1080px;
+	height: 500px;
+	top:180px;
+	left: 100px;
+
+// Results ************************************************
+
+.results{
+	float: left;
+	width: 600px;
+	height: 100%;
+
+	.header{
+		width: 100%;
+		height:27px;
+		border-bottom: 3px solid white;
+		margin-bottom: 5px;
+
+		p{
+			font-size: 18px;
+			color: $foregroundcolor;
+			font-family: "Gibson-SemiBold";
+		}
+	}
+
+	.drink-container{
+		position: relative;
+		height: 430px;
+		width: 100%;
+	}
+	.drink-tag{margin-right: 13px;}
+	.drink-tag:nth-child(4n+4){margin-right: 0px;}
+}
+
+// Results ************************************************
+
+.filter-controls{
+	float: left;
+	width: 400px;
+	height: 100%;
+	margin-left: 80px;
+	overflow: hidden;
+
+	.header{
+		width: 100%;
+		height:27px;
+		border-bottom: 3px solid white;
+		margin-bottom: 10px;
+		
+		p{
+			font-size: 18px;
+			color: $foregroundcolor;
+			font-family: "Gibson-SemiBold";
+		}
+	}
+
+	.form-container{
+		width: 100%;
+		height: 433px;
+		color: $foregroundcolor;
+
+		.radio-container{
+			height: 30px;
+			margin-bottom: 10px;
+
+			input[type=radio] {
+				display:none; 
+			}
+
+			input[type=radio] + label {
+				font-family: "Gibson-light";
+				text-align: center;
+				float: left;
+				margin:0px;
+				padding: 6px;
+				background-color: $backgroundcolor;
+				color:$foregroundcolor;
+				border: 1px solid white;
+				width:200px;
+				height: 30px;
+			}
+
+			input[type=radio]:checked + label { 
+				float: left;
+				font-family: "Gibson-SemiBold";
+				text-align: center;
+				background-color:$foregroundcolor;
+				color: $backgroundcolor;
+				border: 1px solid white;
+				width:200px;
+				height: 30px;
+			}
+
+		}
+
+		.checkbox-container{
+			height: 70px;
+			margin-bottom: 10px;
+
+			input[type=checkbox] {
+				display:none; 
+			}
+
+			input[type=checkbox] + label {
+				margin-right:12px;
+				margin-bottom: 10px;
+				font-family: "Gibson-light";
+				text-align: center;
+				float: left;
+				padding-top: 5px;
+				background-color: $backgroundcolor;
+				color:$foregroundcolor;
+				border: 1px solid white;
+				width:70px;
+				height: 30px;
+			}
+
+			input[type=checkbox] + label:nth-child(5n+5){margin-right: 0px;}
+
+			input[type=checkbox]:checked + label { 
+				float: left;
+				font-family: "Gibson-SemiBold";
+				text-align: center;
+				background-color:$foregroundcolor;
+				color: $backgroundcolor;
+				border: 1px solid white;
+				width:70px;
+				height: 30px;
+			}
+		}
+
+		.glass-checkbox{
+			float: left;
+			height: 100px;
+			margin-bottom: 10px;
+			width: 280px;
+
+			input[type=checkbox] {
+				display:none; 
+			}
+
+			input[type=checkbox] + label {
+				margin-right:30px;
+				float: left;
+				width:40px;
+				height: 70px;
+				opacity: .5;
+
+				.img{
+					width: 100%;
+					height:100%;
+				}
+			}
+
+			input[type=checkbox]:checked + label { 
+				float: left;
+				width:40px;
+				height: 70px;
+				opacity: 1;
+			}
+		}
+
+		.mix-checkbox{
+			float: left;
+			height: 100px;
+			margin-bottom: 10px;
+
+			input[type=checkbox] {
+				display:none; 
+			}
+
+			input[type=checkbox] + label {
+				margin-right:30px;
+				float: left;
+				width:40px;
+				height: 70px;
+				opacity: .5;
+
+				.img{
+					width: 100%;
+					height:100%;
+				}
+			}
+
+			input[type=checkbox] + label:last-child{margin-right: 0px;}
+
+			input[type=checkbox]:checked + label { 
+				float: left;
+				width:40px;
+				height: 70px;
+				opacity: 1;
+			}
+		}
+
+		.secondary-header{
+			width: 100%;
+			height: 20px;
+			border-bottom: 1px solid white;
+			margin-bottom:10px;
+			
+			.title{
+				font-family: "Gibson-Light";
+			}
+		}
+
+		.glass-header{
+			width: 250px;
+			height: 20px;
+			border-bottom: 1px solid white;
+			margin-bottom:10px;
+			
+			.title{
+				font-family: "Gibson-Light";
+			}
+		}
+
+		.mix-header{
+			width: 120px;
+			height: 20px;
+			border-bottom: 1px solid white;
+			margin-bottom:10px;
+			
+			.title{
+				font-family: "Gibson-Light";
+			}
+		}
+	}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
