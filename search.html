@@ -1,331 +1,243 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
-<title>available</title>
-<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-<link rel="stylesheet" href="stylesheets/index.css">
-<link rel="stylesheet" href="stylesheets/search.css">
+	<title>available</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+	<link rel="stylesheet" href="stylesheets/index.css">
+	<link rel="stylesheet" href="stylesheets/search.css">
 
-<script type="text/javascript" src="javascript/iscroll/iscroll.js"></script>
-<script type="text/javascript" src="javascript/iscroll/iscroll-probe.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript">
+	<script type="text/javascript" src="javascript/iscroll/iscroll.js"></script>
+	<script type="text/javascript" src="javascript/iscroll/iscroll-probe.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
 
 
-var myScroll;
-var position;
+	var myScroll;
+	var position;
 
-function updatePosition () {
-	position.innerHTML = this.x>>0;
-}
-
-function makeSmall(){
-	$('.three').removeClass('big');
-	$('.four').removeClass('big');
-	$('.five').removeClass('big');
-	$('.six').removeClass('big');
-	$('.seven').removeClass('big');
-	$('.eight').removeClass('big');
-	$('.nine').removeClass('big');
-	$('.ten').removeClass('big');
-}
-
-function printPosition () {
-	console.log(position.innerHTML);
-	if(position.innerHTML == 0){
-		console.log('yeah');
-		makeSmall();
-		$('.three').addClass('big');
-	}else if(position.innerHTML == -120){
-		console.log('yeah');
-		makeSmall();
-		$('.four').addClass('big');
-	} else if(position.innerHTML == -240){
-		makeSmall();
-		$('.five').addClass('big');
-	}else if(position.innerHTML == -360){
-		makeSmall();
-		$('.six').addClass('big');
-	}else if(position.innerHTML == -480){
-		makeSmall();
-		$('.seven').addClass('big');
-	}else if(position.innerHTML == -600){
-		makeSmall();
-		$('.eight').addClass('big');
-	}else if(position.innerHTML == -720){
-		makeSmall();
-		$('.nine').addClass('big');
-	}else if(position.innerHTML == -840){
-		makeSmall();
-		$('.ten').addClass('big');
+	function updatePosition () {
+		position.innerHTML = this.x>>0;
 	}
-}
 
-function loaded () {
-	position = document.getElementById('position');
-	myScroll = new IScroll('#wrapper', {scrollX: true, scrollY: false, preventDefault: false, snap: 'li', probeType: 3, mouseWheel: true});
-	myScroll.on('scrollEnd', updatePosition);
-	myScroll.on('scrollEnd', printPosition);
-}
+	function makeSmall(){
+		$('.three').removeClass('big');
+		$('.four').removeClass('big');
+		$('.five').removeClass('big');
+		$('.six').removeClass('big');
+		$('.seven').removeClass('big');
+		$('.eight').removeClass('big');
+		$('.nine').removeClass('big');
+		$('.ten').removeClass('big');
+	}
 
-$(window).on("load",function(){
-	console.log('hello world');
-	$('.three').addClass('big');
+	function printPosition () {
+		console.log(position.innerHTML);
+		if(position.innerHTML == 0){
+			console.log('yeah');
+			makeSmall();
+			$('.three').addClass('big');
+		}else if(position.innerHTML == -120){
+			console.log('yeah');
+			makeSmall();
+			$('.four').addClass('big');
+		} else if(position.innerHTML == -240){
+			makeSmall();
+			$('.five').addClass('big');
+		}else if(position.innerHTML == -360){
+			makeSmall();
+			$('.six').addClass('big');
+		}else if(position.innerHTML == -480){
+			makeSmall();
+			$('.seven').addClass('big');
+		}else if(position.innerHTML == -600){
+			makeSmall();
+			$('.eight').addClass('big');
+		}else if(position.innerHTML == -720){
+			makeSmall();
+			$('.nine').addClass('big');
+		}else if(position.innerHTML == -840){
+			makeSmall();
+			$('.ten').addClass('big');
+		}
+	}
 
-	position = document.getElementById('position');
+	function loaded () {
+		position = document.getElementById('position');
+		myScroll = new IScroll('#wrapper', {scrollX: true, scrollY: false, preventDefault: false, snap: 'li', probeType: 3, mouseWheel: true});
+		myScroll.on('scrollEnd', updatePosition);
+		myScroll.on('scrollEnd', printPosition);
+	}
 
-});
+	$(window).on("load",function(){
+		console.log('hello world');
+		$('.three').addClass('big');
 
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		position = document.getElementById('position');
 
-</script>
+	});
 
-<style type="text/css">
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+	</script>
+
+	<!-- include data -->
+	<script src="data/searchResults.js"></script>
+
+	<style type="text/css">
 
 
-</style>
+	</style>
 </head>
 <body onload="loaded()">
-<!-- <div id="monitor">X position: <strong id="position">0</strong></div> -->
-<div id="monitor">X position: <strong id="position">0</strong></div>
-<div id="wrapper">
-	<div id="scroller">
-		<ul>
-			<li class = 'one'><img src="images/library_menu_btn.svg"></li>
-			<li class = 'two'><img src="images/search_menu_btn.svg"></li>
-			<li class = 'three'><img src="images/available_menu_btn.svg"></li>
-			<li class = 'four'><img src="images/lessons_menu_btn.svg"></li>
-			<li class = 'five'><img src="images/shopping_menu_btn.svg"></li>
-			<li class = 'six'><img src="images/library_menu_btn.svg"></li>
-			<li class = 'seven'><img src="images/search_menu_btn.svg"></li>
-			<li class = 'eight'><img src="images/available_menu_btn.svg"></li>
-			<li class = 'nine'><img src="images/lessons_menu_btn.svg"></li>
-			<li class = 'ten'><img src="images/shopping_menu_btn.svg"></li>
+	<!-- <div id="monitor">X position: <strong id="position">0</strong></div> -->
+	<div id="monitor">X position: <strong id="position">0</strong></div>
+	<div id="wrapper">
+		<div id="scroller">
+			<ul>
+				<li class = 'one'><img src="images/library_menu_btn.svg"></li>
+				<li class = 'two'><img src="images/search_menu_btn.svg"></li>
+				<li class = 'three'><img src="images/available_menu_btn.svg"></li>
+				<li class = 'four'><img src="images/lessons_menu_btn.svg"></li>
+				<li class = 'five'><img src="images/shopping_menu_btn.svg"></li>
+				<li class = 'six'><img src="images/library_menu_btn.svg"></li>
+				<li class = 'seven'><img src="images/search_menu_btn.svg"></li>
+				<li class = 'eight'><img src="images/available_menu_btn.svg"></li>
+				<li class = 'nine'><img src="images/lessons_menu_btn.svg"></li>
+				<li class = 'ten'><img src="images/shopping_menu_btn.svg"></li>
 
-		</ul>
-	</div>
-</div>
-
-<div class="results-menu">
-
-	<!-- * * * * * * * * * * * * RESULTS * * * * * * * * * * * * -->
-	<!-- * * * * * * * * * * * * RESULTS * * * * * * * * * * * * -->
-	<!-- * * * * * * * * * * * * RESULTS * * * * * * * * * * * * -->
-
-
-	<div class="results">
-
-		<div class="header">
-			<p>Results</p>
+			</ul>
 		</div>
-		<div class="drink-container">
-			
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/coupe_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/rocks_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/rocks_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/coupe_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/coupe_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/collins_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/rocks_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/collins_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/collins_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/coupe_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-			<div class="drink-tag">	
-				<div class="glass-type"><img src="images/coupe_icon.svg"></div>
-				<div class="box">
-					<p class='name'>Lorem Ipsum</p>
-					<p class="base-spirit">Base Spirit:Bourbon</p>
-					<p class="profile">Profile: Spirit Forward, Sweet</p>
-				</div>	
-			</div>
-
-		</div>
-
 	</div>
 
-	<!-- * * * * * * * * * * * * RESULTS * * * * * * * * * * * * -->
-	<!-- * * * * * * * * * * * * RESULTS * * * * * * * * * * * * -->
-	<!-- * * * * * * * * * * * * RESULTS * * * * * * * * * * * * -->
+	<div class="results-menu">
 
-	<div class="filter-controls">
-		<div class="header">
-			<p>Filters</p>
-		</div>
-		<div class="form-container">
-			<form>
-				<div class="radio-container">
-					<input type="radio" id="radio1" name="available" value="Available" checked="checked">
-					<label for="radio1">Available Cocktails</label>
-					<input type="radio" id="radio2" name="available" value="All">
-					<label for="radio2">All Cocktails</label>
-				</div>
+		<!-- Drink Tags ************************************************************** -->
 
-				<div class="secondary-header">
-					<div class="title">Spirit</div>
-				</div>
+		<div class="results">
+			<div class="header">
+				<p>Results</p>
+			</div>
+			<div class="drink-container">
+			</div>
 
-				<div class="checkbox-container">
-					<input type="checkbox" id="absinthe" name="spirit" value="Absinthe">
-					<label for="absinthe">Absinthe</label>
-					<input type="checkbox" id="Bourbon" name="spirit" value="Bourbon">
-					<label for="Bourbon">Bourbon</label>
-					<input type="checkbox" id="Brandy" name="spirit" value="Brandy">
-					<label for="Brandy">Brandy</label>
-					<input type="checkbox" id="Gin" name="spirit" value="Brandy">
-					<label for="Gin">Gin</label>
-					<input type="checkbox" id="Pisco" name="spirit" value="Pisco">
-					<label for="Pisco">Pisco</label>
-					<input type="checkbox" id="Rum" name="spirit" value="Rum">
-					<label for="Rum">Rum</label>
-					<input type="checkbox" id="Rye" name="spirit" value="Rye">
-					<label for="Rye">Rye</label>
-					<input type="checkbox" id="Scotch" name="spirit" value="Scotch">
-					<label for="Scotch">Scotch</label>
-					<input type="checkbox" id="Tequila" name="spirit" value="Tequila">
-					<label for="Tequila">Tequila</label>
-					<input type="checkbox" id="Vodka" name="spirit" value="Vodka">
-					<label for="Vodka">Vodka</label>
-				</div>
-
-				<div class="secondary-header">
-					<div class="title">Flavor Profile</div>
-				</div>
-
-				<div class="checkbox-container">
-					<input type="checkbox" id="Bitter" name="Flavor" value="Bitter">
-					<label for="Bitter">Bitter</label>
-					<input type="checkbox" id="Bubbly" name="Flavor" value="Bubbly">
-					<label for="Bubbly">Bubbly</label>
-					<input type="checkbox" id="Creamy" name="Flavor" value="Creamy">
-					<label for="Creamy">Creamy</label>
-					<input type="checkbox" id="Fruity" name="Flavor" value="Fruity">
-					<label for="Fruity">Fruity</label>
-					<input type="checkbox" id="Savory" name="Flavor" value="Savory">
-					<label for="Savory">Savory</label>
-					<input type="checkbox" id="Sour" name="Flavor" value="Sour">
-					<label for="Sour">Sour</label>
-					<input type="checkbox" id="Spicy" name="Flavor" value="Spicy">
-					<label for="Spicy">Spicy</label>
-					<input type="checkbox" id="Sweet" name="Flavor" value="Sweet">
-					<label for="Sweet">Sweet</label>
-				</div>
-
-
-
-				<div class="glass-checkbox">
-				<div class="glass-header">
-					<div class="title">Glass Type</div>
-				</div>
-					<input type="checkbox" id="Collins" name="Glass" value="Collins">
-					<label for="Collins"><img src="images/collins_checkbox.svg"></label>
-					<input type="checkbox" id="Flute" name="Glass" value="Flute">
-					<label for="Flute"><img src="images/flute_checkbox.svg"></label>
-					<input type="checkbox" id="Coupe" name="Glass" value="Coupe">
-					<label for="Coupe"><img src="images/coupe_checkbox.svg"></label>
-					<input type="checkbox" id="Rocks" name="Glass" value="Rocks">
-					<label for="Rocks"><img src="images/rocks_checkbox.svg"></label>
-				</div>
-
-
-				
-				<div class="mix-checkbox">
-										<div class="mix-header">
-					<div class="title">Shaken or Stirred</div>
-				</div>
-					<input type="checkbox" id="Shaken" name="Mix" value="Shaken">
-					<label for="Shaken"><img src="images/shaker_radio.svg"></label>
-					<input type="checkbox" id="Stirred" name="Mix" value="Stirred">
-					<label for="Stirred"><img src="images/stir_radio.svg"></label>
-				</div>
-
-			</form>
 		</div>
 
-	</div>
-</div>
+		<!-- Drink Tags ************************************************************** -->
 
-</body>
-</html>
+
+		<!-- Filter Controls ********************************************************* -->
+
+
+		<div class="filter-controls">
+			<div class="header">
+				<p>Filters</p>
+			</div>
+			<div class="form-container">
+				<form>
+					<div class="radio-container">
+						<input type="radio" id="radio1" name="available" value="Available" checked="checked">
+						<label for="radio1">Available Cocktails</label>
+						<input type="radio" id="radio2" name="available" value="All">
+						<label for="radio2">All Cocktails</label>
+					</div>
+
+					<div class="secondary-header">
+						<div class="title">Spirit</div>
+					</div>
+
+					<div class="checkbox-container">
+						<input type="checkbox" id="absinthe" name="spirit" value="Absinthe">
+						<label for="absinthe">Absinthe</label>
+						<input type="checkbox" id="Bourbon" name="spirit" value="Bourbon">
+						<label for="Bourbon">Bourbon</label>
+						<input type="checkbox" id="Brandy" name="spirit" value="Brandy">
+						<label for="Brandy">Brandy</label>
+						<input type="checkbox" id="Gin" name="spirit" value="Brandy">
+						<label for="Gin">Gin</label>
+						<input type="checkbox" id="Pisco" name="spirit" value="Pisco">
+						<label for="Pisco">Pisco</label>
+						<input type="checkbox" id="Rum" name="spirit" value="Rum">
+						<label for="Rum">Rum</label>
+						<input type="checkbox" id="Rye" name="spirit" value="Rye">
+						<label for="Rye">Rye</label>
+						<input type="checkbox" id="Scotch" name="spirit" value="Scotch">
+						<label for="Scotch">Scotch</label>
+						<input type="checkbox" id="Tequila" name="spirit" value="Tequila">
+						<label for="Tequila">Tequila</label>
+						<input type="checkbox" id="Vodka" name="spirit" value="Vodka">
+						<label for="Vodka">Vodka</label>
+					</div>
+
+					<div class="secondary-header">
+						<div class="title">Flavor Profile</div>
+					</div>
+
+					<div class="checkbox-container">
+						<input type="checkbox" id="Bitter" name="Flavor" value="Bitter">
+						<label for="Bitter">Bitter</label>
+						<input type="checkbox" id="Bubbly" name="Flavor" value="Bubbly">
+						<label for="Bubbly">Bubbly</label>
+						<input type="checkbox" id="Creamy" name="Flavor" value="Creamy">
+						<label for="Creamy">Creamy</label>
+						<input type="checkbox" id="Fruity" name="Flavor" value="Fruity">
+						<label for="Fruity">Fruity</label>
+						<input type="checkbox" id="Savory" name="Flavor" value="Savory">
+						<label for="Savory">Savory</label>
+						<input type="checkbox" id="Sour" name="Flavor" value="Sour">
+						<label for="Sour">Sour</label>
+						<input type="checkbox" id="Spicy" name="Flavor" value="Spicy">
+						<label for="Spicy">Spicy</label>
+						<input type="checkbox" id="Sweet" name="Flavor" value="Sweet">
+						<label for="Sweet">Sweet</label>
+					</div>
+
+					<div class="icon-checkbox">
+
+						<div class="glass-checkbox">
+							<div class="glass-header">
+								<div class="title">Glass Type</div>
+							</div>
+							<input type="checkbox" id="Collins" name="Glass" value="Collins">
+							<label for="Collins"><img src="images/collins_checkbox.svg"></label>
+							<input type="checkbox" id="Flute" name="Glass" value="Flute">
+							<label for="Flute"><img src="images/flute_checkbox.svg"></label>
+							<input type="checkbox" id="Coupe" name="Glass" value="Coupe">
+							<label for="Coupe"><img src="images/coupe_checkbox.svg"></label>
+							<input type="checkbox" id="Rocks" name="Glass" value="Rocks">
+							<label for="Rocks"><img src="images/rocks_checkbox.svg"></label>
+						</div>
+
+						<div class="mix-checkbox">
+							<div class="mix-header">
+								<div class="title">Shaken or Stirred</div>
+							</div>
+							<input type="checkbox" id="Shaken" name="Mix" value="Shaken">
+							<label for="Shaken"><img src="images/shaker_radio.svg"></label>
+							<input type="checkbox" id="Stirred" name="Mix" value="Stirred">
+							<label for="Stirred"><img src="images/stir_radio.svg"></label>
+						</div>
+					</div>
+
+					<div class="tolerance-header">
+						<div class="title">Recipe Tolerance</div>
+					</div>
+
+					<input type="range" name="points" min="0" max="4" value="4" list="tolsettings">
+
+
+
+
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="javascript/addDrinkTags.js"></script>
+
+	</body>
+	</html>

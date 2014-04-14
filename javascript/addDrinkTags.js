@@ -1,10 +1,5 @@
 // global functions
 
-function printToScreen(text) {
-    $('#printArea > p').append(text + "<br>");
-}
-
-
 (function ($) {
     /*
      * The following code demonstrates how to dynamically generate html from
@@ -12,7 +7,7 @@ function printToScreen(text) {
      * named "handlebars" for a simpler approach.
      */
     function displayDrinks(results) {
-        var results = drinkSample.results;
+        var results = searchResults.results;
         var numResults = results.length;
         var elements = [];
         var element;
@@ -30,10 +25,9 @@ function printToScreen(text) {
             element = "<div class='glass-type'><img src='" + results[i].glasstype+ "'></div>";
             element += "<div class='box'>";
             element += "<p class='name'>"+ results[i].name +"</p>";
-            element += "<p class='base'>"+ results[i].base +"</p>";
-            element += "<p class='profile'>"+ results[i].profile +"</p>";
+            element += "<p class='base'>Base Spirit:"+ results[i].base +"</p>";
+            element += "<p class='profile'>Profile:"+ results[i].profile +"</p>";
             element += "</div>";
-
             // add each string to an array
             elements.push(element);
         }
@@ -42,11 +36,11 @@ function printToScreen(text) {
         htmlString = "<div class='drink-tag'>" + elements.join("</div><div class='drink-tag'>") + "</div>";
 
         // append the assembled string to the DOM
-        $('#twitterResults').append(htmlString);
+        $('.drink-container').append(htmlString);
     }
 
     // twitterSample is included in the first script in index.html
-    displayDrinks(window.drinksSample);
+    displayDrinks(window.searchResults);
 
 
 }(window.jQuery));

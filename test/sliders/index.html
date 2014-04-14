@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+
+
+input[type='range'] {
+		-webkit-appearance: none;
+		border-radius: 5px;
+		box-shadow: inset 0 0 5px #333;
+		background-color: black;
+		height: 10px;
+		width: 400px;
+		vertical-align: middle;
+		outline: none;
+		border: 2px solid green;
+
+	}
+
+	input[type='range']::-webkit-slider-thumb {
+		-webkit-appearance: none !important;
+		border-radius: 15px;
+		background-color: black;
+		border: 2px solid red;
+		height: 30px;
+		width: 30px;
+	}
+
+
+</style>
+<body>
+
+				<input type="range" name="points" min="0" max="4" value="4" list="tolsettings">
+					<datalist id="tolsettings">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>		
+					</datalist>
+
+</form>
+
+
+
+</body>
+</html>
