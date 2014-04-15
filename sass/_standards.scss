@@ -1,0 +1,14 @@
+	$backgroundcolor: black;
+	$foregroundcolor: white;
+	$glass-type-size: 35px;
+	$menuleftmargin:40px;
+
+	body{
+		-webkit-user-select: none;
+	}
+
+	h3 {
+		font-size: 18px;
+		color: $foregroundcolor;
+		font-family: "Gibson-SemiBold";
+	}

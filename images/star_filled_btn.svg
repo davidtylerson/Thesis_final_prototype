@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
-	 height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="20px" viewBox="5 5 20 20" enable-background="new 5 5 20 20" xml:space="preserve">
 <g id="Layer_2" display="none">
 	<rect x="-502.5" y="-381.5" display="inline" stroke="#FFFFFF" stroke-miterlimit="10" width="914" height="652"/>
 </g>
-<g id="Layer_1">
+<g id="Layer_1_1_">
 	<g>
-		<polygon fill="#FFFFFF" points="8.035,18.979 1.037,11.807 10.705,10.329 15,1.177 19.295,10.329 28.963,11.807 21.965,18.979 
-			23.61,29.064 15,24.305 6.388,29.064 		"/>
-		<path fill="#FFFFFF" d="M15,2.354l3.729,7.946l0.227,0.483l0.527,0.081l8.443,1.291l-6.143,6.295l-0.353,0.361l0.081,0.498
-			l1.439,8.82l-7.468-4.127L15,23.734l-0.483,0.267l-7.469,4.127l1.44-8.82l0.081-0.498l-0.353-0.361l-6.143-6.295l8.443-1.291
-			l0.527-0.081l0.227-0.483L15,2.354 M15,0l-4.634,9.875L0,11.46l7.501,7.688L5.729,30L15,24.876L24.27,30l-1.771-10.853L30,11.46
-			L19.634,9.875L15,0L15,0z"/>
+		<polygon fill="#FFFFFF" points="10.357,17.652 5.691,12.872 12.137,11.886 15,5.785 17.863,11.886 24.309,12.872 19.644,17.652 
+			20.739,24.376 15,21.203 9.259,24.376 		"/>
+		<path fill="#FFFFFF" d="M15,6.569l2.485,5.297l0.152,0.322l0.351,0.054l5.629,0.86L19.522,17.3l-0.236,0.24l0.055,0.332
+			l0.959,5.881l-4.979-2.752L15,20.823l-0.322,0.178l-4.979,2.751l0.96-5.88l0.054-0.332l-0.235-0.24l-4.095-4.197l5.628-0.861
+			l0.351-0.054l0.151-0.322L15,6.569 M15,5l-3.089,6.583L5,12.64l5,5.125L8.819,25L15,21.584L21.18,25l-1.181-7.235L25,12.64
+			l-6.911-1.057L15,5L15,5z"/>
 	</g>
 </g>
 </svg>

@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, ../sass/_standards.scss */
+body {
+  -webkit-user-select: none;
+}
+
+/* line 10, ../sass/_standards.scss */
+h3 {
+  font-size: 18px;
+  color: white;
+  font-family: "Gibson-SemiBold";
+}
+
+/* line 9, ../sass/recipe-screen.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/recipe-screen.scss */
+img {
+  -webkit-user-drag: none;
+}
+
+/* line 18, ../sass/recipe-screen.scss */
+.recipe-area {
+  position: absolute;
+  top: 180px;
+  left: 230px;
+  width: 820px;
+  height: 550px;
+}
+/* line 25, ../sass/recipe-screen.scss */
+.recipe-area .header {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+}
+/* line 30, ../sass/recipe-screen.scss */
+.recipe-area .header .top {
+  border-bottom: 3px solid white;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+/* line 36, ../sass/recipe-screen.scss */
+.recipe-area .header .top p {
+  float: left;
+  font-size: 20px;
+  color: white;
+  font-family: "Gibson-SemiBold";
+}
+/* line 43, ../sass/recipe-screen.scss */
+.recipe-area .header .top .icon-area {
+  float: right;
+}
+/* line 46, ../sass/recipe-screen.scss */
+.recipe-area .header .top .icon-area .star {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/star_open_btn.svg);
+  margin-right: 10px;
+}
+/* line 53, ../sass/recipe-screen.scss */
+.recipe-area .header .top .icon-area .star.active {
+  background-image: url(../images/star_filled_btn.svg);
+}
+/* line 58, ../sass/recipe-screen.scss */
+.recipe-area .header .top .icon-area .back {
+  float: left;
+  width: 30px;
+  height: 20px;
+  background-image: url(../images/back_btn.svg);
+}
+/* line 68, ../sass/recipe-screen.scss */
+.recipe-area .header .bottom .left {
+  float: left;
+}
+/* line 71, ../sass/recipe-screen.scss */
+.recipe-area .header .bottom .left p {
+  font-size: 18px;
+  color: white;
+  font-family: "Gibson-light";
+  margin-bottom: 4px;
+}
+/* line 80, ../sass/recipe-screen.scss */
+.recipe-area .header .bottom .right {
+  float: right;
+}
+/* line 83, ../sass/recipe-screen.scss */
+.recipe-area .header .bottom .right .static {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-image: url(../images/recipe_static.svg);
+  margin-right: 5px;
+}
+/* line 92, ../sass/recipe-screen.scss */
+.recipe-area .header .bottom .right .interactive {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-image: url(../images/recipe_interactive.svg);
+}
+/* line 103, ../sass/recipe-screen.scss */
+.recipe-area .step {
+  float: left;
+  width: 150px;
+  margin-right: 17px;
+}
+/* line 108, ../sass/recipe-screen.scss */
+.recipe-area .step .header {
+  width: 100%;
+  height: 25px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-top: 4px;
+}
+/* line 117, ../sass/recipe-screen.scss */
+.recipe-area .step .add {
+  width: 150px;
+  height: 170px;
+  background-image: url(../images/step_add_mixing.svg);
+  margin-bottom: 40px;
+}
+/* line 124, ../sass/recipe-screen.scss */
+.recipe-area .step .add {
+  width: 150px;
+  height: 170px;
+  background-image: url(../images/step_add_mixing.svg);
+  margin-bottom: 40px;
+}
+/* line 132, ../sass/recipe-screen.scss */
+.recipe-area .step .stir {
+  width: 150px;
+  height: 170px;
+  background-image: url(../images/step_stir_mixing.svg);
+  margin-bottom: 40px;
+}
+/* line 140, ../sass/recipe-screen.scss */
+.recipe-area .step .rinse {
+  width: 150px;
+  height: 170px;
+  background-image: url(../images/step_rinse_rocks.svg);
+  margin-bottom: 40px;
+}
+/* line 148, ../sass/recipe-screen.scss */
+.recipe-area .step .strain {
+  width: 150px;
+  height: 170px;
+  background-image: url(../images/step_strain_rocks.svg);
+  margin-bottom: 40px;
+}
+/* line 156, ../sass/recipe-screen.scss */
+.recipe-area .step .garnish {
+  width: 150px;
+  height: 170px;
+  background-image: url(../images/step_add_rocks.svg);
+  margin-bottom: 40px;
+}
+/* line 164, ../sass/recipe-screen.scss */
+.recipe-area .step p {
+  font-size: 9px;
+  color: white;
+  font-family: "Gibson-semibold";
+  margin-bottom: 5px;
+}
+/* line 171, ../sass/recipe-screen.scss */
+.recipe-area .step .left {
+  width: 65px;
+  height: 65px;
+  float: left;
+  margin-right: 20px;
+}
+/* line 177, ../sass/recipe-screen.scss */
+.recipe-area .step .left p {
+  text-align: right;
+}
+/* line 183, ../sass/recipe-screen.scss */
+.recipe-area .step .right {
+  width: 65px;
+  height: 65px;
+  float: left;
+}
+/* line 188, ../sass/recipe-screen.scss */
+.recipe-area .step .right p {
+  text-align: left;
+}
+/* line 193, ../sass/recipe-screen.scss */
+.recipe-area .step .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 70px;
+  background-color: white;
+}
+/* line 202, ../sass/recipe-screen.scss */
+.recipe-area .step:last-child {
+  margin-right: 0px;
+}

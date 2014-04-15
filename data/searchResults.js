@@ -130,6 +130,19 @@ var searchResults = {
     "strength":"Medium",
     "Type":"Classic",
     "served":"On The Rocks"
+  },
+    {
+    "name":"Sazarac",
+    "base":"Rye",
+    "profile":"Spirit Forward",
+    "profile2":"",
+    "Glass":"Rocks",
+    "glasstype":"images/rocks_icon.svg",
+    "Mix":"Stirred",
+    "available":"",
+    "strength":"Strong",
+    "Type":"Classic",
+    "served":"Neat"
   }
 
 ]};

@@ -1,5 +1,6 @@
 	@import 'reset';
 	@import 'drinktag';
+	@import 'standards';
 
 	$backgroundcolor: black;
 	$foregroundcolor: white;
@@ -9,8 +10,6 @@
 	*, *:before, *:after {
 		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 	} 
-
-
 
 .results-menu {
 	position: absolute;
@@ -274,9 +273,10 @@
 		-webkit-appearance: none !important;
 		border-radius: 15px;
 		background-color: black;
-		border: 2px solid white;
+		//border: 2px solid white;
 		height: 30px;
 		width: 30px;
+		background-image:url(../images/slider_btn.svg)
 	}
 	}
 }

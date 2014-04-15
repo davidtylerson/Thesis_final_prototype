@@ -102,14 +102,26 @@ table {
   font-family: "Gibson-Light";
 }
 
-/* line 9, ../sass/search.scss */
+/* line 6, ../sass/_standards.scss */
+body {
+  -webkit-user-select: none;
+}
+
+/* line 10, ../sass/_standards.scss */
+h3 {
+  font-size: 18px;
+  color: white;
+  font-family: "Gibson-SemiBold";
+}
+
+/* line 10, ../sass/search.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 15, ../sass/search.scss */
+/* line 14, ../sass/search.scss */
 .results-menu {
   position: absolute;
   width: 1080px;
@@ -117,40 +129,40 @@ table {
   top: 180px;
   left: 100px;
 }
-/* line 24, ../sass/search.scss */
+/* line 23, ../sass/search.scss */
 .results-menu .results {
   float: left;
   width: 600px;
   height: 100%;
 }
-/* line 29, ../sass/search.scss */
+/* line 28, ../sass/search.scss */
 .results-menu .results .header {
   width: 100%;
   height: 27px;
   border-bottom: 3px solid white;
   margin-bottom: 5px;
 }
-/* line 35, ../sass/search.scss */
+/* line 34, ../sass/search.scss */
 .results-menu .results .header p {
   font-size: 18px;
   color: white;
   font-family: "Gibson-SemiBold";
 }
-/* line 42, ../sass/search.scss */
+/* line 41, ../sass/search.scss */
 .results-menu .results .drink-container {
   position: relative;
   height: 430px;
   width: 100%;
 }
-/* line 47, ../sass/search.scss */
+/* line 46, ../sass/search.scss */
 .results-menu .results .drink-tag {
   margin-right: 13px;
 }
-/* line 48, ../sass/search.scss */
+/* line 47, ../sass/search.scss */
 .results-menu .results .drink-tag:nth-child(4n+4) {
   margin-right: 0px;
 }
-/* line 53, ../sass/search.scss */
+/* line 52, ../sass/search.scss */
 .results-menu .filter-controls {
   float: left;
   width: 400px;
@@ -158,35 +170,35 @@ table {
   margin-left: 80px;
   overflow: hidden;
 }
-/* line 60, ../sass/search.scss */
+/* line 59, ../sass/search.scss */
 .results-menu .filter-controls .header {
   width: 100%;
   height: 27px;
   border-bottom: 3px solid white;
   margin-bottom: 10px;
 }
-/* line 66, ../sass/search.scss */
+/* line 65, ../sass/search.scss */
 .results-menu .filter-controls .header p {
   font-size: 18px;
   color: white;
   font-family: "Gibson-SemiBold";
 }
-/* line 73, ../sass/search.scss */
+/* line 72, ../sass/search.scss */
 .results-menu .filter-controls .form-container {
   width: 100%;
   height: 433px;
   color: white;
 }
-/* line 78, ../sass/search.scss */
+/* line 77, ../sass/search.scss */
 .results-menu .filter-controls .form-container .radio-container {
   height: 30px;
   margin-bottom: 10px;
 }
-/* line 82, ../sass/search.scss */
+/* line 81, ../sass/search.scss */
 .results-menu .filter-controls .form-container .radio-container input[type=radio] {
   display: none;
 }
-/* line 86, ../sass/search.scss */
+/* line 85, ../sass/search.scss */
 .results-menu .filter-controls .form-container .radio-container input[type=radio] + label {
   font-family: "Gibson-light";
   text-align: center;
@@ -199,7 +211,7 @@ table {
   width: 200px;
   height: 30px;
 }
-/* line 99, ../sass/search.scss */
+/* line 98, ../sass/search.scss */
 .results-menu .filter-controls .form-container .radio-container input[type=radio]:checked + label {
   float: left;
   font-family: "Gibson-SemiBold";
@@ -210,16 +222,16 @@ table {
   width: 200px;
   height: 30px;
 }
-/* line 112, ../sass/search.scss */
+/* line 111, ../sass/search.scss */
 .results-menu .filter-controls .form-container .checkbox-container {
   height: 70px;
   margin-bottom: 10px;
 }
-/* line 116, ../sass/search.scss */
+/* line 115, ../sass/search.scss */
 .results-menu .filter-controls .form-container .checkbox-container input[type=checkbox] {
   display: none;
 }
-/* line 120, ../sass/search.scss */
+/* line 119, ../sass/search.scss */
 .results-menu .filter-controls .form-container .checkbox-container input[type=checkbox] + label {
   margin-right: 12px;
   margin-bottom: 10px;
@@ -233,11 +245,11 @@ table {
   width: 70px;
   height: 30px;
 }
-/* line 134, ../sass/search.scss */
+/* line 133, ../sass/search.scss */
 .results-menu .filter-controls .form-container .checkbox-container input[type=checkbox] + label:nth-child(5n+5) {
   margin-right: 0px;
 }
-/* line 136, ../sass/search.scss */
+/* line 135, ../sass/search.scss */
 .results-menu .filter-controls .form-container .checkbox-container input[type=checkbox]:checked + label {
   float: left;
   font-family: "Gibson-SemiBold";
@@ -248,23 +260,23 @@ table {
   width: 70px;
   height: 30px;
 }
-/* line 147, ../sass/search.scss */
+/* line 146, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox {
   width: 100%;
   height: 110px;
 }
-/* line 151, ../sass/search.scss */
+/* line 150, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .glass-checkbox {
   float: left;
   height: 100px;
   margin-bottom: 10px;
   width: 280px;
 }
-/* line 157, ../sass/search.scss */
+/* line 156, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .glass-checkbox input[type=checkbox] {
   display: none;
 }
-/* line 161, ../sass/search.scss */
+/* line 160, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .glass-checkbox input[type=checkbox] + label {
   margin-right: 30px;
   float: left;
@@ -272,29 +284,29 @@ table {
   height: 70px;
   opacity: .5;
 }
-/* line 168, ../sass/search.scss */
+/* line 167, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .glass-checkbox input[type=checkbox] + label .img {
   width: 100%;
   height: 100%;
 }
-/* line 174, ../sass/search.scss */
+/* line 173, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .glass-checkbox input[type=checkbox]:checked + label {
   float: left;
   width: 40px;
   height: 70px;
   opacity: 1;
 }
-/* line 182, ../sass/search.scss */
+/* line 181, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .mix-checkbox {
   float: left;
   height: 100px;
   margin-bottom: 10px;
 }
-/* line 187, ../sass/search.scss */
+/* line 186, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .mix-checkbox input[type=checkbox] {
   display: none;
 }
-/* line 191, ../sass/search.scss */
+/* line 190, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .mix-checkbox input[type=checkbox] + label {
   margin-right: 30px;
   float: left;
@@ -302,67 +314,67 @@ table {
   height: 70px;
   opacity: .5;
 }
-/* line 198, ../sass/search.scss */
+/* line 197, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .mix-checkbox input[type=checkbox] + label .img {
   width: 100%;
   height: 100%;
 }
-/* line 204, ../sass/search.scss */
+/* line 203, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .mix-checkbox input[type=checkbox] + label:last-child {
   margin-right: 0px;
 }
-/* line 206, ../sass/search.scss */
+/* line 205, ../sass/search.scss */
 .results-menu .filter-controls .form-container .icon-checkbox .mix-checkbox input[type=checkbox]:checked + label {
   float: left;
   width: 40px;
   height: 70px;
   opacity: 1;
 }
-/* line 216, ../sass/search.scss */
+/* line 215, ../sass/search.scss */
 .results-menu .filter-controls .form-container .secondary-header {
   width: 100%;
   height: 20px;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
 }
-/* line 222, ../sass/search.scss */
+/* line 221, ../sass/search.scss */
 .results-menu .filter-controls .form-container .secondary-header .title {
   font-family: "Gibson-Light";
 }
-/* line 227, ../sass/search.scss */
+/* line 226, ../sass/search.scss */
 .results-menu .filter-controls .form-container .tolerance-header {
   width: 100%;
   height: 20px;
   border-bottom: 1px solid white;
   margin-bottom: 15px;
 }
-/* line 233, ../sass/search.scss */
+/* line 232, ../sass/search.scss */
 .results-menu .filter-controls .form-container .tolerance-header .title {
   font-family: "Gibson-Light";
 }
-/* line 238, ../sass/search.scss */
+/* line 237, ../sass/search.scss */
 .results-menu .filter-controls .form-container .glass-header {
   width: 250px;
   height: 20px;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
 }
-/* line 244, ../sass/search.scss */
+/* line 243, ../sass/search.scss */
 .results-menu .filter-controls .form-container .glass-header .title {
   font-family: "Gibson-Light";
 }
-/* line 249, ../sass/search.scss */
+/* line 248, ../sass/search.scss */
 .results-menu .filter-controls .form-container .mix-header {
   width: 120px;
   height: 20px;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
 }
-/* line 255, ../sass/search.scss */
+/* line 254, ../sass/search.scss */
 .results-menu .filter-controls .form-container .mix-header .title {
   font-family: "Gibson-Light";
 }
-/* line 260, ../sass/search.scss */
+/* line 259, ../sass/search.scss */
 .results-menu .filter-controls .form-container input[type=range] {
   -webkit-appearance: none;
   border-radius: 5px;
@@ -374,12 +386,12 @@ table {
   outline: none;
   border: 1px solid white;
 }
-/* line 273, ../sass/search.scss */
+/* line 272, ../sass/search.scss */
 .results-menu .filter-controls .form-container input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none !important;
   border-radius: 15px;
   background-color: black;
-  border: 2px solid white;
   height: 30px;
   width: 30px;
+  background-image: url(../images/slider_btn.svg);
 }
