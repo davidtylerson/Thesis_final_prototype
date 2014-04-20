@@ -59,31 +59,85 @@ table {
   border-spacing: 0;
 }
 
-/* line 8, ../sass/index.scss */
+/* line 6, ../sass/_standards.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 14, ../sass/index.scss */
+/* line 12, ../sass/_standards.scss */
 body, ul, li {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-/* line 20, ../sass/index.scss */
+/* line 18, ../sass/_standards.scss */
 body {
-  font-size: 12px;
-  font-family: ubuntu, helvetica, arial;
+  color: white;
+  font-family: "Gibson-SemiBold";
   background-color: black;
   width: 1280px;
   height: 800px;
-  border: 1px solid white;
 }
 
-/* line 33, ../sass/index.scss */
+/* line 27, ../sass/_standards.scss */
+body {
+  -webkit-user-select: none;
+}
+
+/* line 30, ../sass/_standards.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 35, ../sass/_standards.scss */
+h3 {
+  font-size: 18px;
+  color: white;
+  font-family: "Gibson-SemiBold";
+}
+
+/* line 41, ../sass/_standards.scss */
+h4 {
+  font-size: 12px;
+  color: white;
+  font-family: "Gibson-light";
+}
+
+/* line 1, ../sass/_clock.scss */
+.clock {
+  position: absolute;
+  top: 250px;
+  left: 423px;
+  text-align: center;
+  font-size: 50px;
+}
+/* line 7, ../sass/_clock.scss */
+.clock .start-btn {
+  margin-top: 40px;
+  margin-left: 30px;
+  padding-top: 20px;
+  width: 400px;
+  height: 100px;
+  border: 2px solid white;
+}
+
+/* line 18, ../sass/_clock.scss */
+#txt {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 120px;
+}
+
+/* line 10, ../sass/index.scss */
+#monitor {
+  display: none;
+}
+
+/* line 18, ../sass/index.scss */
 #header {
   width: 100%;
   height: 45px;
@@ -96,10 +150,10 @@ body {
   font-weight: bold;
 }
 
-/* line 45, ../sass/index.scss */
+/* line 30, ../sass/index.scss */
 #wrapper {
   position: absolute;
-  z-index: 1;
+  z-index: 2000;
   height: 150px;
   width: 560px;
   overflow: hidden;
@@ -108,7 +162,7 @@ body {
   padding-top: 20px;
 }
 
-/* line 57, ../sass/index.scss */
+/* line 42, ../sass/index.scss */
 #scroller {
   position: absolute;
   z-index: 1;
@@ -116,7 +170,7 @@ body {
   height: 80px;
 }
 
-/* line 65, ../sass/index.scss */
+/* line 50, ../sass/index.scss */
 #scroller ul {
   list-style: none;
   width: 100%;
@@ -124,7 +178,7 @@ body {
   margin: 0;
 }
 
-/* line 72, ../sass/index.scss */
+/* line 57, ../sass/index.scss */
 #scroller li {
   width: 80px;
   height: 80px;
@@ -134,29 +188,29 @@ body {
   margin-right: 20px;
 }
 
-/* line 81, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 #scroller li ~ li {
   margin-left: 20px;
 }
 
-/* line 85, ../sass/index.scss */
+/* line 70, ../sass/index.scss */
 li a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 93, ../sass/index.scss */
+/* line 78, ../sass/index.scss */
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
   -webkit-transition: all 500ms;
   opacity: 0.5;
 }
-/* line 97, ../sass/index.scss */
+/* line 82, ../sass/index.scss */
 .one img, .two img, .three img, .four img, .five img, .six img, .seven img, .eight img, .nine img, .ten img {
   width: 100%;
   height: 100%;
 }
-/* line 102, ../sass/index.scss */
+/* line 87, ../sass/index.scss */
 .one.big, .two.big, .three.big, .four.big, .five.big, .six.big, .seven.big, .eight.big, .nine.big, .ten.big {
   -webkit-transition: all 500ms;
   -webkit-transform: scale(1.5);

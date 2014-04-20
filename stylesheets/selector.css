@@ -1,0 +1,29 @@
+/* line 37, ../sass/selector.scss */
+.image_wrapper {
+  position: absolute;
+  z-index: 1;
+  height: 800px;
+  width: 1280px;
+  overflow: hidden;
+}
+
+/* line 46, ../sass/selector.scss */
+#image_scroller {
+  position: absolute;
+  z-index: 1;
+  width: 100000px;
+  height: 100%px;
+}
+
+/* line 54, ../sass/selector.scss */
+#image_scroller ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 61, ../sass/selector.scss */
+#image_scroller li {
+  float: left;
+}

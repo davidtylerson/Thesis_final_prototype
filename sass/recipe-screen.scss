@@ -86,7 +86,8 @@
 						height: 40px;
 						border-radius: 20px;
 						background-image:url(../images/recipe_static.svg);
-						margin-right: 5px;
+						opacity: .3;
+						
 					}
 
 					.interactive{
@@ -95,76 +96,81 @@
 						height: 40px;
 						border-radius: 20px;
 						background-image:url(../images/recipe_interactive.svg);
+						margin-right: 5px;
 					}
 				}
 			}
 		}
 
-		.step{
-			float: left;
-			width: 150px;
-			margin-right: 17px;
+		.static-recipe{
+			display: none;
 
-			.header{
-				width: 100%;
-				height:25px;
-				border-top: 1px solid white;
-				border-bottom: 1px solid white;
-				padding-top: 4px;
 
-			}
+			.step{
+				float: left;
+				width: 150px;
+				margin-right: 17px;
 
-			.add{
-				width:150px;
-				height:170px;
-				background-image:url(../images/step_add_mixing.svg);
-				margin-bottom: 40px;
-			}
+				.header{
+					width: 100%;
+					height:25px;
+					border-top: 1px solid white;
+					border-bottom: 1px solid white;
+					padding-top: 4px;
 
-						.add{
-				width:150px;
-				height:170px;
-				background-image:url(../images/step_add_mixing.svg);
-				margin-bottom: 40px;
+				}
 
-			}
+				.add{
+					width:150px;
+					height:170px;
+					background-image:url(../images/step_add_mixing.svg);
+					margin-bottom: 40px;
+				}
 
-						.stir{
-				width:150px;
-				height:170px;
-				background-image:url(../images/step_stir_mixing.svg);
-				margin-bottom: 40px;
+				.add{
+					width:150px;
+					height:170px;
+					background-image:url(../images/step_add_mixing.svg);
+					margin-bottom: 40px;
 
-			}
+				}
 
-						.rinse{
-				width:150px;
-				height:170px;
-				background-image:url(../images/step_rinse_rocks.svg);
-				margin-bottom: 40px;
+				.stir{
+					width:150px;
+					height:170px;
+					background-image:url(../images/step_stir_mixing.svg);
+					margin-bottom: 40px;
 
-			}
+				}
 
-						.strain{
-				width:150px;
-				height:170px;
-				background-image:url(../images/step_strain_rocks.svg);
-				margin-bottom: 40px;
+				.rinse{
+					width:150px;
+					height:170px;
+					background-image:url(../images/step_rinse_rocks.svg);
+					margin-bottom: 40px;
 
-			}
+				}
 
-						.garnish{
-				width:150px;
-				height:170px;
-				background-image:url(../images/step_add_rocks.svg);
-				margin-bottom: 40px;
+				.strain{
+					width:150px;
+					height:170px;
+					background-image:url(../images/step_strain_rocks.svg);
+					margin-bottom: 40px;
 
-			}
+				}
+
+				.garnish{
+					width:150px;
+					height:170px;
+					background-image:url(../images/step_add_rocks.svg);
+					margin-bottom: 40px;
+
+				}
 
 				p{ 
 					font-size: 9px;
 					color: $foregroundcolor;
-					font-family: "Gibson-semibold";
+					font-family: "Gibson-light";
 					margin-bottom: 5px;
 				}
 
@@ -189,18 +195,296 @@
 						text-align: left;
 					}
 				}
-			
-			.dot{
-				width:10px;
-				height:10px;
-				border-radius:5px;
-				margin-left: 70px;
-				background-color: $foregroundcolor;
+
+				.dot{
+					width:10px;
+					height:10px;
+					border-radius:5px;
+					margin-left: 70px;
+					background-color: $foregroundcolor;
+				}
+
+
+				} .step:last-child{margin-right: 0px;}
+
 			}
 
+			.interactive-recipe{
+				//display: none;
 
-			} .step:last-child{margin-right: 0px;}
+#next{
+	position: absolute;
+	top:410px;
+	left: 780px
+}
+
+
+//Left Side
+////////////////////////////////////////////////
+
+
+.left-circle, .left-circle-fill{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: 2px solid white;
+	top:350px;
+	left:100px;
+}
+
+.left-circle-fill{
+	background-color: $foregroundcolor;
+
+	.glass-icon{
+		margin-left: 80px;
+		margin-top: 35px;
+	}
+	h3{
+		color: black;
+		width: 150px;
+		text-align: center;
+		margin-top: 15px;
+		margin-left: 25px;
+	}
+}
+
+.left-add{
+
+	.add-leader{
+		position:absolute;
+		left: 200px;
+		top: 150px;
+		width: 4px;
+		height: 300px;
+		background-color: $foregroundcolor;
+	}
+
+	.left{
+		position: absolute;
+		top:150px;
+		left:58px;
+		width:130px;
+		height:100px; 
+		text-align: right;
+	}
+
+	.right{
+		position: absolute;
+		top:150px;
+		left:215px;
+		width:130px;
+		height:100px; 
+	}
+
+	p{
+		font-size: 18px;
+		color: $foregroundcolor;
+		font-family: "Gibson-light";
+		margin-bottom: 5px;
+	}
+}
+
+.left-content{
+	position: absolute;
+	top: 160px;
+	left: 270px;
+	width: 385px;
+	height: 210px;
+
+	.left-leader{
+		float: left;
+		margin-top: 112px;
+	}
+
+	.left-gif-container{
+		margin-left: 105px;
+
+		.header{
+			padding-top:2px;
+			width:280px;
+			height:22px;
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+			margin-bottom: 2px;
 		}
+
+		h4{
+			margin-bottom: 2px;
+		}
+
+		.gif{
+			width:280px;
+			height: 172px;
+			background-color: white;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+	}
+}
+
+//Right Side
+////////////////////////////////////////////////
+
+.right-circle, .right-circle-fill{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+	border: 2px solid white;
+	top:360px;
+	left:550px;
+}
+
+.right-circle-fill{
+	background-color: $foregroundcolor;
+
+	.glass-icon{
+		margin-left: 70px;
+		margin-top: 30px;
+	}
+	h3{
+		color: black;
+		width: 130px;
+		text-align: center;
+		margin-top: 10px;
+		margin-left: 25px;
+	}
+}
+
+
+.right-content{
+	position: absolute;
+	top: 125px;
+	left: 670px;
+	width: 385px;
+	height: 210px;
+
+	.right-leader{
+		float: left;
+		margin-top: 112px;
+	}
+	
+	.right-gif-container{
+		margin-left: 90px;
+
+		.header{
+			padding-top:2px;
+			width:280px;
+			height:22px;
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+			margin-bottom: 2px;
+		}
+		
+		h4{
+			margin-bottom: 2px;
+		}
+		
+		.gif{
+			width:280px;
+			height: 172px;
+			background-color: white;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+	}
+}
+
+
+//Center
+////////////////////////////////////////////////
+
+.lr-arrow{
+	position:absolute;
+	top:450px;
+	left:380px;
+}
+
+.center-content{
+	position: absolute;
+	top: 100px;
+	left: 280px;
+	width: 280px;
+	height: 210px;
+
+
+	
+	.center-gif-container{
+
+		.header{
+			padding-top:2px;
+			width:280px;
+			height:22px;
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+			margin-bottom: 2px;
+		}
+		
+		h4{
+			margin-bottom: 2px;
+		}
+		
+		.gif{
+			width:280px;
+			height: 172px;
+			background-color: white;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+	}
+}
+
+
+//Steps
+////////////////////////////////////////////////
+
+.step-one{
+	//display: none;
+}
+
+.step-two{
+	display: none;
+
+
+}
+
+.step-three{
+	display: none;
+}
+
+.step-four{
+	display: none;
+}
+
+.step-five{
+	display: none;
+}
+
+.step-six{
+	display: none;
+}
+
+.step-seven{
+	display: none;
+}
+
+.step-eight{
+	display: none;
+}
+
+
+
+}
+
+
+}
 
 
 

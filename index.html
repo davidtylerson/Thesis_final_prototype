@@ -5,32 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
 	<title>index</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+	
 	<link rel="stylesheet" href="stylesheets/index.css">
 
 	<script type="text/javascript" src="javascript/iscroll/iscroll.js"></script>
 	<script type="text/javascript" src="javascript/iscroll/iscroll-probe.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="javascript/happyHourClock.js"></script>
+
 	<script type="text/javascript">
 
 
 
-	var myScroll;
-	var position;
-
-	function updatePosition () {
-		position.innerHTML = this.x>>0;
-	}
-
 	function makeSmall(){
-			$('.three').removeClass('big');
-			$('.four').removeClass('big');
-			$('.five').removeClass('big');
-			$('.six').removeClass('big');
-			$('.seven').removeClass('big');
-			$('.eight').removeClass('big');
-			$('.nine').removeClass('big');
-			$('.ten').removeClass('big');
+		$('.three').removeClass('big');
+		$('.four').removeClass('big');
+		$('.five').removeClass('big');
+		$('.six').removeClass('big');
+		$('.seven').removeClass('big');
+		$('.eight').removeClass('big');
+		$('.nine').removeClass('big');
+		$('.ten').removeClass('big');
 	}
 
 	function printPosition () {
@@ -64,14 +59,27 @@
 		}
 	}
 
+	var myScroll;
+	var position;
+
+
+
 	function loaded () {
 		position = document.getElementById('position');
 		myScroll = new IScroll('#wrapper', {scrollX: true, scrollY: false, preventDefault: false, snap: 'li', probeType: 3, mouseWheel: true});
 		myScroll.on('scrollEnd', updatePosition);
 		myScroll.on('scrollEnd', printPosition);
+
+	}
+
+	function updatePosition () {
+		position.innerHTML = this.x>>0;
 	}
 
 	$(window).on("load",function(){
+		loaded();
+		startTime();
+		//myScroll.scrollToElement(document.querySelector('#scroller li:nth-child(5)'), null, null, true)
 		console.log('hello world');
 		$('.three').addClass('big');
 
@@ -89,7 +97,7 @@
 
 	</style>
 </head>
-<body onload="loaded()">
+<body>
 	<!-- <div id="monitor">X position: <strong id="position">0</strong></div> -->
 	<div id="monitor">X position: <strong id="position">0</strong></div>
 	<div id="wrapper">
@@ -105,9 +113,16 @@
 				<li class = 'eight'><img src="images/available_menu_btn.svg"></li>
 				<li class = 'nine'><img src="images/lessons_menu_btn.svg"></li>
 				<li class = 'ten'><img src="images/shopping_menu_btn.svg"></li>
-
 			</ul>
 		</div>
 	</div>
+	<div class="clock">
+		<p>It's Currently</p>
+		<p id="txt"></p>
+		<div id="location"></div>
+		<a href="selector.html"><div class="start-btn"><p>I want a Drink</p></div></a>
+	</div>
+
+	
 </body>
 </html>

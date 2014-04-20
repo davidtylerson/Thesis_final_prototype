@@ -73,9 +73,50 @@
 
 	$(window).on("load",function(){
 		console.log('hello world');
+		loaded();
 		$('.three').addClass('big');
 
 		position = document.getElementById('position');
+
+		var i = 0;
+		var steps = ['.step-one','.step-two','.step-three','.step-four','.step-five','.step-six','.step-seven']
+
+		$("#next").on('click', function(){
+
+			console.log('fire');
+			$(steps[i]).fadeOut(900);
+			$(steps[i+1]).fadeIn(900);
+			i++
+
+
+
+		})
+
+		var toggleSwitch = 0;
+
+		$(".static").on('click', function(){
+			if (toggleSwitch == 0){
+				$(this).css({opacity:1});
+				$(".interactive").css({opacity:.3});
+				$(".interactive-recipe").fadeOut();
+				$(".static-recipe").fadeIn();
+				toggleSwitch = 1;
+			}
+		})
+				$(".interactive").on('click', function(){
+			if (toggleSwitch == 1){
+				$(this).css({opacity:1});
+				$(".static").css({opacity:.3});
+				$(".static-recipe").fadeOut();
+				$(".interactive-recipe").fadeIn();
+				toggleSwitch = 0;
+			}
+		})
+
+				$(".star").on('click', function(){
+					$(this).toggleClass("active");
+				})
+
 
 	});
 
@@ -88,7 +129,7 @@
 
 	</style>
 </head>
-<body onload="loaded()">
+<body>
 	<!-- <div id="monitor">X position: <strong id="position">0</strong></div> -->
 	<div id="monitor">X position: <strong id="position">0</strong></div>
 	<div id="wrapper">
@@ -117,7 +158,7 @@
 				<p class="name">Sazarac Cocktail</p>
 				<div class="icon-area">
 					<div class="star"></div>
-					<div class="back"></div>
+					<a href="javascript:history.back()"><div class="back"></div></a>
 				</div> 
 			</div>
 
@@ -127,8 +168,9 @@
 					<p class="profile">Flavor Profile: Spirit Forward</p>
 				</div>
 				<div class="right">
-					<div class="static"></div>
 					<div class="interactive"></div>
+					<div class="static"></div>
+					
 				</div>
 			</div> 
 		</div> 
@@ -175,7 +217,7 @@
 				<div class="rinse">
 					<div class="bottom">
 						<div class="left">
-<p>1/2 tsp Absynthe</p>
+							<p>1/2 tsp Absynthe</p>
 						</div>
 					</div>
 					
@@ -202,8 +244,8 @@
 				<div class="garnish">
 					<div class="bottom">
 						<div class="left">
-						<p>Orange Twist</p>
-					</div>
+							<p>Orange Twist</p>
+						</div>
 					</div>
 					
 				</div>
@@ -212,7 +254,108 @@
 
 
 
-		</div>        
+		</div>   
+
+
+		<div class="interactive-recipe">
+
+			<div id="next"><img src="images/next_btn.svg"></div>
+
+			<div class="step-one">
+				<div class="left-circle-fill">
+					<div class="glass-icon"><img src="images/barglass_icon_black.svg"></div>
+					<h3>Place Large Barglass Here</h3>
+				</div>
+			</div>
+
+			<div class="step-two">
+				<div class="left-circle"></div>
+				<div class="left-add">
+					<div class="add-leader"></div>
+					<div class="left">
+						<p>1/2 tsp Sugar</p>
+						<p>1/2 tsp water</p>
+					</div>
+					<div class="right">
+						<p>2oz Rye</p>
+						<p>2 dashes Paychaud Bitters</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="step-three">
+				<div class="left-circle"></div>
+				<div class="left-content">
+					<div class="left-leader"><img src="images/leader_left_circle.svg"></div>
+					<div class="left-gif-container">
+						<div class="header">
+							<h3>Stir</h3>
+						</div>
+						<h4>Using a barspoon, Mix for 30 Seconds</h4>
+						<div class="gif"><img src="images/gifs/stir.gif"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="step-four">
+				<div class="left-circle"></div>
+				<div class="right-circle-fill">
+					<div class="glass-icon"><img src="images/barglass_icon_black.svg"></div>
+					<h3>Place Rocks Glass Here</h3>
+				</div>
+			</div>
+
+			<div class="step-five">
+				<div class="left-circle"></div>      
+				<div class="right-circle"></div>
+				<div class="right-content">
+					<div class="right-leader"><img src="images/leader_right_circle.svg"></div>
+					<div class="right-gif-container">
+						<div class="header">
+							<h3>Rinse</h3>
+						</div>
+						<h4>Rinse Glass with 1/2 tsp Absinthe</h4>
+						<div class="gif"><img src="images/gifs/rinse.gif"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="step-six">
+				<div class="left-circle"></div>      
+				<div class="right-circle-fill"></div>
+				<div class="lr-arrow"><img src="images/arrow_lr.svg"></div>
+				<div class="center-content">
+					<div class="center-gif-container">
+						<div class="header">
+							<h3>Strain</h3>
+						</div>
+						<h4>Strain into the Rocks Glass</h4>
+						<div class="gif"><img src="images/gifs/strain.gif"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="step-seven">     
+				<div class="right-circle"></div>
+				<div class="right-content">
+					<div class="right-leader"><img src="images/leader_right_circle.svg"></div>
+					<div class="right-gif-container">
+						<div class="header">
+							<h3>Garnish</h3>
+						</div>
+						<h4>Garnish with a Lemon Twist</h4>
+						<div class="gif"><img src="images/gifs/twist.gif"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+		</div>     
 
 
 	</div>

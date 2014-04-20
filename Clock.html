@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var locationArray = [
+"Magadan, Russia",
+"Vladivostok, Russia",
+"Guam",
+"Tokyo, Japan",
+"Shanghai, China",
+"Jakarta, Indonesia",
+"Khanty-Mansiysk, Russia",
+"Lahore, Pakistan",
+"Muscat, Oman",
+"Addis Ababa, Djibouti",
+"Cairo, Egypt",
+"Paris, France",
+"London, England",
+"Ittoqqortoormiit, Greenland",
+"Fernando de Noronha, Brazil",
+"Buenos Aires, Argentina",
+"San Juan, Puerto Rico",
+"New York",
+"New Orleans",
+"Cabo San Lucas",
+"Los Angeles",
+"Ankorage",
+"Tahiti",
+"Tonga"
+];
+
+var location = locationArray[h];
+// add a zero in front of numbers<10
+m=checkTime(m);
+//h=convertMilTime(h);
+h=5;
+document.getElementById('txt').innerHTML=h+":"+m+" PM";
+document.getElementById('location').innerHTML=location;
+t=setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+<div id="location"></div>
+</body>
+</html>
