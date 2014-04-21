@@ -29,13 +29,14 @@
 
 	#wrapper {
 		position: absolute;
-		z-index: 2000;
-		height: 150px;
+		z-index: 2;
+		height: 140px;
 		width: 560px;
 		overflow: hidden;
 		top:30px;
 		left: 360px;
-		padding-top: 20px;
+		padding-top: 30px;
+		//background-color: red;
 	}
 
 
@@ -91,3 +92,17 @@
 
 		}
 	}
+
+	.contentwrapper{
+		z-index:5000;
+		background-color: red;
+
+.question, .take-me-button{
+
+		text-align: center;
+	font-size: 50px;
+
+
+}
+
+}

@@ -1,21 +1,22 @@
-/* line 37, ../sass/selector.scss */
+/* line 3, ../sass/selector.scss */
 .image_wrapper {
   position: absolute;
   z-index: 1;
   height: 800px;
   width: 1280px;
   overflow: hidden;
+  opacity: .1;
+  transition: 3s;
 }
 
-/* line 46, ../sass/selector.scss */
+/* line 15, ../sass/selector.scss */
 #image_scroller {
   position: absolute;
-  z-index: 1;
-  width: 100000px;
-  height: 100%px;
+  width: 7680px;
+  height: 100%;
 }
 
-/* line 54, ../sass/selector.scss */
+/* line 22, ../sass/selector.scss */
 #image_scroller ul {
   list-style: none;
   width: 100%;
@@ -23,7 +24,71 @@
   margin: 0;
 }
 
-/* line 61, ../sass/selector.scss */
+/* line 29, ../sass/selector.scss */
 #image_scroller li {
   float: left;
+}
+
+/* line 34, ../sass/selector.scss */
+.content-wrapper {
+  pointer-events: none;
+  display: inline block;
+  display: none;
+  z-index: 2;
+  position: fixed;
+  top: 200px;
+  left: 190px;
+  width: 900px;
+}
+/* line 45, ../sass/selector.scss */
+.content-wrapper p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 70px;
+}
+/* line 52, ../sass/selector.scss */
+.content-wrapper .location_btn {
+  pointer-events: auto;
+  display: block;
+  font-family: "Gibson-light";
+  margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  width: 150px;
+  padding: 8px 0 0 22px;
+  height: 70px;
+  border: 2px solid white;
+}
+
+/* line 75, ../sass/selector.scss */
+.shaken-or-stirred {
+  display: none;
+}
+/* line 78, ../sass/selector.scss */
+.shaken-or-stirred .center {
+  margin-top: 100px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 84, ../sass/selector.scss */
+.shaken-or-stirred .center .shake_btn {
+  float: left;
+  width: 100px;
+  margin-right: 100px;
+}
+/* line 89, ../sass/selector.scss */
+.shaken-or-stirred .center .shake_btn img {
+  width: 100%;
+}
+/* line 96, ../sass/selector.scss */
+.shaken-or-stirred .center .stir_btn {
+  float: right;
+  height: 230px;
+}
+/* line 100, ../sass/selector.scss */
+.shaken-or-stirred .center .stir_btn img {
+  height: 100%;
 }

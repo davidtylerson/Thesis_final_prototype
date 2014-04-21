@@ -109,23 +109,25 @@ h4 {
 
 /* line 1, ../sass/_clock.scss */
 .clock {
-  position: absolute;
-  top: 250px;
-  left: 423px;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 610px;
   text-align: center;
   font-size: 50px;
 }
-/* line 7, ../sass/_clock.scss */
+/* line 8, ../sass/_clock.scss */
 .clock .start-btn {
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 20px;
   width: 400px;
   height: 100px;
   border: 2px solid white;
 }
 
-/* line 18, ../sass/_clock.scss */
+/* line 20, ../sass/_clock.scss */
 #txt {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -153,16 +155,16 @@ h4 {
 /* line 30, ../sass/index.scss */
 #wrapper {
   position: absolute;
-  z-index: 2000;
-  height: 150px;
+  z-index: 2;
+  height: 140px;
   width: 560px;
   overflow: hidden;
   top: 30px;
   left: 360px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
-/* line 42, ../sass/index.scss */
+/* line 43, ../sass/index.scss */
 #scroller {
   position: absolute;
   z-index: 1;
@@ -170,7 +172,7 @@ h4 {
   height: 80px;
 }
 
-/* line 50, ../sass/index.scss */
+/* line 51, ../sass/index.scss */
 #scroller ul {
   list-style: none;
   width: 100%;
@@ -178,7 +180,7 @@ h4 {
   margin: 0;
 }
 
-/* line 57, ../sass/index.scss */
+/* line 58, ../sass/index.scss */
 #scroller li {
   width: 80px;
   height: 80px;
@@ -188,31 +190,42 @@ h4 {
   margin-right: 20px;
 }
 
-/* line 66, ../sass/index.scss */
+/* line 67, ../sass/index.scss */
 #scroller li ~ li {
   margin-left: 20px;
 }
 
-/* line 70, ../sass/index.scss */
+/* line 71, ../sass/index.scss */
 li a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 78, ../sass/index.scss */
+/* line 79, ../sass/index.scss */
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
   -webkit-transition: all 500ms;
   opacity: 0.5;
 }
-/* line 82, ../sass/index.scss */
+/* line 83, ../sass/index.scss */
 .one img, .two img, .three img, .four img, .five img, .six img, .seven img, .eight img, .nine img, .ten img {
   width: 100%;
   height: 100%;
 }
-/* line 87, ../sass/index.scss */
+/* line 88, ../sass/index.scss */
 .one.big, .two.big, .three.big, .four.big, .five.big, .six.big, .seven.big, .eight.big, .nine.big, .ten.big {
   -webkit-transition: all 500ms;
   -webkit-transform: scale(1.5);
   opacity: 1;
+}
+
+/* line 96, ../sass/index.scss */
+.contentwrapper {
+  z-index: 5000;
+  background-color: red;
+}
+/* line 100, ../sass/index.scss */
+.contentwrapper .question, .contentwrapper .take-me-button {
+  text-align: center;
+  font-size: 50px;
 }

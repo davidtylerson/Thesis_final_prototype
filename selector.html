@@ -13,6 +13,7 @@
 	<script type="text/javascript" src="javascript/iscroll/iscroll-probe.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="javascript/happyHourClock.js"></script>
+	<script type="text/javascript" src="javascript/blur.js"></script>
 
 	<script type="text/javascript">
 
@@ -67,7 +68,7 @@
 
 	function loaded () {
 		position = document.getElementById('position');
-		myScroll = new IScroll('.image_wrapper', {scrollX: true, scrollY: false, preventDefault: false,snap: 'li', mouseWheel: true});
+		myScroll = new IScroll('.image_wrapper', {scrollX: true, scrollY: false, preventDefault: false,snap: 'li', mouseWheel: true, click: true,});
 
 		myScroll = new IScroll('#wrapper', {scrollX: true, scrollY: false, preventDefault: false, snap: 'li', probeType: 3, mouseWheel: true});
 		myScroll.on('scrollEnd', updatePosition);
@@ -88,6 +89,22 @@
 
 		position = document.getElementById('position');
 		$('img').on('dragstart', function(event) { event.preventDefault(); });
+
+
+		$(".image_wrapper").css({opacity:1});
+
+		setTimeout(
+			function() 
+			{
+				$(".content-wrapper").fadeIn(1200);
+			}, 1000);
+
+		$(".location_btn").on('click', function(){
+
+			$(".location-question").fadeOut(1000);
+			$(".shaken-or-stirred").fadeIn(1000);
+
+		})
 
 	});
 
@@ -122,25 +139,39 @@
 		</div>
 	</div>
 
+	<div class="location-question">
+		<div class="content-wrapper">
+			<p>Where do you want to be?</p>
 
-	<div class="image_wrapper">
-		<div id="image_scroller">
-			<ul>
-				<li><img src="images/large_images/BeachBar1.png"></li>
-				<li><img src="images/large_images/BeachBar2.png"></li>
-				<li><img src="images/large_images/BeachBar1.png"></li>
-				<li><img src="images/large_images/BeachBar2.png"></li>
-								<li><img src="images/large_images/BeachBar1.png"></li>
-				<li><img src="images/large_images/BeachBar2.png"></li>
-				<li><img src="images/large_images/BeachBar1.png"></li>
-				<li><img src="images/large_images/BeachBar2.png"></li>
-								<li><img src="images/large_images/BeachBar1.png"></li>
-				<li><img src="images/large_images/BeachBar2.png"></li>
-				<li><img src="images/large_images/BeachBar1.png"></li>
-				<li><img src="images/large_images/BeachBar2.png"></li>
-
-			</ul>
+			<div class="location_btn">Here</div>
 		</div>
+
+
+		<div class="image_wrapper">
+			<div id="image_scroller">
+				<ul>
+					<li class = "test"><img src="images/large_images/BeachBar2.png"></li>
+					<li><img src="images/large_images/KingCold.png"></li>
+					<li><img src="images/large_images/Prohibition.png"></li>
+					<li><img src="images/large_images/OakRoom.png"></li>
+					<li><img src="images/large_images/BeachBar1.png"></li>
+					<li><img src="images/large_images/NewYork.png"></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="shaken-or-stirred">
+
+		<div class="content-wrapper">
+			<p>Shaken or Stirred?</p>
+			<div class="center">
+				<div class="shake_btn"><img src="images/gifs/shake_line.gif"></div>
+				<div class="stir_btn"><img src="images/gifs/stir_line.gif"></div>
+			</div>
+		</div>
+
 	</div>
 
 
