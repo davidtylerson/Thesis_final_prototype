@@ -1,0 +1,47 @@
+var searchResults      = { 
+  "results" :[
+
+  {
+    "name":"Negroni",
+    "base":"Gin",
+    "profile":"Bitter",
+    "profile2":"Spirit Forward",
+    "Glass":"Rocks",
+    "glasstype":"images/rocks_icon.svg",
+    "Mix":"Stirred",
+    "available":"",
+    "strength":"Strong",
+    "Type":"Classic",
+    "served":"On The Rocks"
+  },
+
+    {
+    "name":"The Revolver",
+    "base":"Bourbon",
+    "profile":"Bitter",
+    "profile2":"Spirit Forward",
+    "Glass":"Coupe",
+    "glasstype":"images/coupe_icon.svg",
+    "Mix":"Stirred",
+    "available":"",
+    "strength":"Strong",
+    "Type":"Modern Classic",
+    "served":"Up"
+  },
+
+    {
+    "name":"Boulevardier",
+    "base":"Rye",
+    "profile":"Bitter",
+    "profile2":"Sweet",
+    "Glass":"Coupe",
+    "glasstype":"images/coupe_icon.svg",
+    "Mix":"Stirred",
+    "available":"",
+    "strength":"Medium",
+    "Type":"Classic",
+    "served":"Up"
+  }
+
+
+]};

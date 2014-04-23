@@ -80,27 +80,28 @@ body {
   background-color: black;
   width: 1280px;
   height: 800px;
+  overflow: hidden;
 }
 
-/* line 27, ../sass/_standards.scss */
+/* line 28, ../sass/_standards.scss */
 body {
   -webkit-user-select: none;
 }
 
-/* line 30, ../sass/_standards.scss */
+/* line 31, ../sass/_standards.scss */
 a {
   color: white;
   text-decoration: none;
 }
 
-/* line 35, ../sass/_standards.scss */
+/* line 36, ../sass/_standards.scss */
 h3 {
   font-size: 18px;
   color: white;
   font-family: "Gibson-SemiBold";
 }
 
-/* line 41, ../sass/_standards.scss */
+/* line 42, ../sass/_standards.scss */
 h4 {
   font-size: 12px;
   color: white;
@@ -155,16 +156,16 @@ h4 {
 /* line 30, ../sass/index.scss */
 #wrapper {
   position: absolute;
-  z-index: 2;
-  height: 140px;
+  z-index: 2000;
+  height: 150px;
   width: 560px;
   overflow: hidden;
   top: 30px;
   left: 360px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
-/* line 43, ../sass/index.scss */
+/* line 42, ../sass/index.scss */
 #scroller {
   position: absolute;
   z-index: 1;
@@ -172,7 +173,7 @@ h4 {
   height: 80px;
 }
 
-/* line 51, ../sass/index.scss */
+/* line 50, ../sass/index.scss */
 #scroller ul {
   list-style: none;
   width: 100%;
@@ -180,7 +181,7 @@ h4 {
   margin: 0;
 }
 
-/* line 58, ../sass/index.scss */
+/* line 57, ../sass/index.scss */
 #scroller li {
   width: 80px;
   height: 80px;
@@ -190,42 +191,31 @@ h4 {
   margin-right: 20px;
 }
 
-/* line 67, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 #scroller li ~ li {
   margin-left: 20px;
 }
 
-/* line 71, ../sass/index.scss */
+/* line 70, ../sass/index.scss */
 li a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 79, ../sass/index.scss */
+/* line 78, ../sass/index.scss */
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
   -webkit-transition: all 500ms;
   opacity: 0.5;
 }
-/* line 83, ../sass/index.scss */
+/* line 82, ../sass/index.scss */
 .one img, .two img, .three img, .four img, .five img, .six img, .seven img, .eight img, .nine img, .ten img {
   width: 100%;
   height: 100%;
 }
-/* line 88, ../sass/index.scss */
+/* line 87, ../sass/index.scss */
 .one.big, .two.big, .three.big, .four.big, .five.big, .six.big, .seven.big, .eight.big, .nine.big, .ten.big {
   -webkit-transition: all 500ms;
   -webkit-transform: scale(1.5);
   opacity: 1;
-}
-
-/* line 96, ../sass/index.scss */
-.contentwrapper {
-  z-index: 5000;
-  background-color: red;
-}
-/* line 100, ../sass/index.scss */
-.contentwrapper .question, .contentwrapper .take-me-button {
-  text-align: center;
-  font-size: 50px;
 }

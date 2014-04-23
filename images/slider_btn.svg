@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
-	 height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px"
+	 height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
 <g id="Layer_2">
 </g>
 <g id="Layer_1">
 	<g>
 		<g>
-			<circle fill="none" cx="15" cy="15" r="14.062"/>
-			<path fill="#FFFFFF" d="M15,30C6.729,30,0,23.271,0,15S6.729,0,15,0s15,6.729,15,15S23.271,30,15,30z M15,1.875
-				C7.763,1.875,1.875,7.763,1.875,15S7.763,28.125,15,28.125S28.125,22.237,28.125,15S22.237,1.875,15,1.875z"/>
+			<circle fill="none" cx="20" cy="20" r="18.75"/>
+			<path fill="#FFFFFF" d="M20,40C8.971,40,0,31.027,0,20S8.971,0,20,0s20,8.973,20,20S31.029,40,20,40z M20,2.5
+				C10.35,2.5,2.5,10.351,2.5,20S10.35,37.5,20,37.5S37.5,29.649,37.5,20S29.65,2.5,20,2.5z"/>
 		</g>
 		<g>
 			<g>
-				<line x1="17.812" y1="11.504" x2="17.812" y2="18.86"/>
-				<rect x="17.344" y="11.504" fill="#FFFFFF" width="0.938" height="7.356"/>
+				<line x1="23.75" y1="15.339" x2="23.75" y2="25.146"/>
+				<rect x="23.125" y="15.339" fill="#FFFFFF" width="1.25" height="9.808"/>
 			</g>
 			<g>
-				<line x1="15" y1="11.504" x2="15" y2="18.86"/>
-				<rect x="14.531" y="11.504" fill="#FFFFFF" width="0.938" height="7.356"/>
+				<line x1="20" y1="15.339" x2="20" y2="25.146"/>
+				<rect x="19.375" y="15.339" fill="#FFFFFF" width="1.25" height="9.808"/>
 			</g>
 			<g>
-				<line x1="12.188" y1="11.36" x2="12.188" y2="18.716"/>
-				<rect x="11.719" y="11.36" fill="#FFFFFF" width="0.938" height="7.356"/>
+				<line x1="16.25" y1="15.146" x2="16.25" y2="24.954"/>
+				<rect x="15.625" y="15.146" fill="#FFFFFF" width="1.25" height="9.808"/>
 			</g>
 		</g>
 	</g>

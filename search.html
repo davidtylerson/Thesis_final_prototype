@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="javascript/iscroll/iscroll.js"></script>
 	<script type="text/javascript" src="javascript/iscroll/iscroll-probe.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="javascript/headerNav.js"></script>
 	<script type="text/javascript">
 
 
@@ -72,8 +73,13 @@
 	}
 
 	$(window).on("load",function(){
-		console.log('hello world');
+		loaded();
+		myScroll.scrollToElement(document.querySelector('#scroller li:nth-child(5)'), null, null, true) // nav to question walkthrough
 		$('.three').addClass('big');
+
+		$('.box').on('click', function(){
+			console.log("clickeroo")
+		})
 
 		position = document.getElementById('position');
 
@@ -84,14 +90,10 @@
 	</script>
 
 	<!-- include data -->
-	<script src="data/searchResults.js"></script>
+	<script src="data/searchResults.JSON"></script>
 
-	<style type="text/css">
-
-
-	</style>
 </head>
-<body onload="loaded()">
+<body>
 	<!-- <div id="monitor">X position: <strong id="position">0</strong></div> -->
 	<div id="monitor">X position: <strong id="position">0</strong></div>
 	<div id="wrapper">
@@ -139,7 +141,7 @@
 				<form>
 					<div class="radio-container">
 						<input type="radio" id="radio1" name="available" value="Available" checked="checked">
-						<label for="radio1">Available Cocktails</label>
+						<label for="radio1">What's On Hand</label>
 						<input type="radio" id="radio2" name="available" value="All">
 						<label for="radio2">All Cocktails</label>
 					</div>
@@ -227,17 +229,13 @@
 
 					<input type="range" name="points" min="0" max="4" value="4" list="tolsettings">
 
-
-
-
-
-					</form>
-				</div>
-
+				</form>
 			</div>
+
 		</div>
+	</div>
 
-		<script src="javascript/addDrinkTags.js"></script>
+	<script src="javascript/addDrinkTags.js"></script>
 
-	</body>
-	</html>
+</body>
+</html>

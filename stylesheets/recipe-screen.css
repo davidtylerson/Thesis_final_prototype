@@ -80,27 +80,28 @@ body {
   background-color: black;
   width: 1280px;
   height: 800px;
+  overflow: hidden;
 }
 
-/* line 27, ../sass/_standards.scss */
+/* line 28, ../sass/_standards.scss */
 body {
   -webkit-user-select: none;
 }
 
-/* line 30, ../sass/_standards.scss */
+/* line 31, ../sass/_standards.scss */
 a {
   color: white;
   text-decoration: none;
 }
 
-/* line 35, ../sass/_standards.scss */
+/* line 36, ../sass/_standards.scss */
 h3 {
   font-size: 18px;
   color: white;
   font-family: "Gibson-SemiBold";
 }
 
-/* line 41, ../sass/_standards.scss */
+/* line 42, ../sass/_standards.scss */
 h4 {
   font-size: 12px;
   color: white;

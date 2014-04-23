@@ -22,17 +22,15 @@
 
         for (var i = 0; i < numResults; i++) {
 
-            // create a link to the recipe files
-            var link = results[i].name.replace(/\s/g, '')+"_recipe.html";
+ 
 
             // create an html string. Note use of single vs double quotes.
             element = "<div class='glass-type'><img src='" + results[i].glasstype+ "'></div>";
-            element +="<a href="+link+">" 
             element += "<div class='box'>";
             element += "<p class='name'>"+ results[i].name +"</p>";
             element += "<p class='base'>Base Spirit:"+ results[i].base +"</p>";
             element += "<p class='profile'>Profile:"+ results[i].profile +"</p>";
-            element += "</div></a>";
+            element += "</div>";
             // add each string to an array
             elements.push(element);
 
@@ -42,7 +40,7 @@
         htmlString = "<div class='drink-tag'>" + elements.join("</div><div class='drink-tag'>") + "</div>";
 
         // append the assembled string to the DOM
-        $('.drink-container').append(htmlString);
+        $('.suggestions').find('.center').append(htmlString);
 
     }
 

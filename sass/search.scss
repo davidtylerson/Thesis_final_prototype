@@ -47,7 +47,7 @@
 	.drink-tag:nth-child(4n+4){margin-right: 0px;}
 }
 
-// Results ************************************************
+// Filter Form ************************************************
 
 .filter-controls{
 	float: left;
@@ -227,7 +227,7 @@
 			width: 100%;
 			height: 20px;
 			border-bottom: 1px solid white;
-			margin-bottom:15px;
+			margin-bottom:20px;
 
 			.title{
 				font-family: "Gibson-Light";
@@ -274,8 +274,8 @@
 		border-radius: 15px;
 		background-color: black;
 		//border: 2px solid white;
-		height: 30px;
-		width: 30px;
+		height: 40px;
+		width: 40px;
 		background-image:url(../images/slider_btn.svg)
 	}
 	}

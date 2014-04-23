@@ -1,4 +1,141 @@
-/* line 3, ../sass/selector.scss */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, ../sass/_standards.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/_standards.scss */
+body, ul, li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 18, ../sass/_standards.scss */
+body {
+  color: white;
+  font-family: "Gibson-SemiBold";
+  background-color: black;
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+}
+
+/* line 28, ../sass/_standards.scss */
+body {
+  -webkit-user-select: none;
+}
+
+/* line 31, ../sass/_standards.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 36, ../sass/_standards.scss */
+h3 {
+  font-size: 18px;
+  color: white;
+  font-family: "Gibson-SemiBold";
+}
+
+/* line 42, ../sass/_standards.scss */
+h4 {
+  font-size: 12px;
+  color: white;
+  font-family: "Gibson-light";
+}
+
+/* line 1, ../sass/_clock.scss */
+.clock {
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 610px;
+  text-align: center;
+  font-size: 50px;
+}
+/* line 8, ../sass/_clock.scss */
+.clock .start-btn {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 400px;
+  height: 100px;
+  border: 2px solid white;
+}
+
+/* line 20, ../sass/_clock.scss */
+#txt {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 120px;
+}
+
+/* line 5, ../sass/selector.scss */
 .image_wrapper {
   position: absolute;
   z-index: 1;
@@ -9,14 +146,14 @@
   transition: 3s;
 }
 
-/* line 15, ../sass/selector.scss */
+/* line 17, ../sass/selector.scss */
 #image_scroller {
   position: absolute;
   width: 7680px;
   height: 100%;
 }
 
-/* line 22, ../sass/selector.scss */
+/* line 24, ../sass/selector.scss */
 #image_scroller ul {
   list-style: none;
   width: 100%;
@@ -24,14 +161,18 @@
   margin: 0;
 }
 
-/* line 29, ../sass/selector.scss */
+/* line 31, ../sass/selector.scss */
 #image_scroller li {
   float: left;
 }
 
-/* line 34, ../sass/selector.scss */
-.content-wrapper {
+/* line 38, ../sass/selector.scss */
+.location-question .content-wrapper {
   pointer-events: none;
+}
+
+/* line 43, ../sass/selector.scss */
+.content-wrapper {
   display: inline block;
   display: none;
   z-index: 2;
@@ -40,14 +181,14 @@
   left: 190px;
   width: 900px;
 }
-/* line 45, ../sass/selector.scss */
+/* line 54, ../sass/selector.scss */
 .content-wrapper p {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 70px;
 }
-/* line 52, ../sass/selector.scss */
+/* line 61, ../sass/selector.scss */
 .content-wrapper .location_btn {
   pointer-events: auto;
   display: block;
@@ -62,33 +203,120 @@
   border: 2px solid white;
 }
 
-/* line 75, ../sass/selector.scss */
+/* line 83, ../sass/selector.scss */
 .shaken-or-stirred {
   display: none;
 }
-/* line 78, ../sass/selector.scss */
+/* line 86, ../sass/selector.scss */
 .shaken-or-stirred .center {
   margin-top: 100px;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 84, ../sass/selector.scss */
+/* line 92, ../sass/selector.scss */
 .shaken-or-stirred .center .shake_btn {
   float: left;
   width: 100px;
+  height: 261px;
   margin-right: 100px;
+  transition: 1s;
 }
-/* line 89, ../sass/selector.scss */
+/* line 99, ../sass/selector.scss */
 .shaken-or-stirred .center .shake_btn img {
   width: 100%;
 }
-/* line 96, ../sass/selector.scss */
+/* line 103, ../sass/selector.scss */
 .shaken-or-stirred .center .stir_btn {
   float: right;
+  width: 110px;
   height: 230px;
+  transition: 1s;
 }
-/* line 100, ../sass/selector.scss */
+/* line 109, ../sass/selector.scss */
 .shaken-or-stirred .center .stir_btn img {
   height: 100%;
+}
+
+/* line 120, ../sass/selector.scss */
+.strong-or-refreshing p, .sweet-or-bitter p {
+  font-size: 50px;
+}
+/* line 123, ../sass/selector.scss */
+.strong-or-refreshing .center, .sweet-or-bitter .center {
+  margin-top: 100px;
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 129, ../sass/selector.scss */
+.strong-or-refreshing .center .strong, .strong-or-refreshing .center .refreshing, .strong-or-refreshing .center .sweet, .strong-or-refreshing .center .bitter, .sweet-or-bitter .center .strong, .sweet-or-bitter .center .refreshing, .sweet-or-bitter .center .sweet, .sweet-or-bitter .center .bitter {
+  float: left;
+  width: 210px;
+  height: 210px;
+  border-radius: 105px;
+  border: 5px solid white;
+  transition: 1s;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 85px;
+}
+/* line 140, ../sass/selector.scss */
+.strong-or-refreshing .center .strong.clicked, .strong-or-refreshing .center .refreshing.clicked, .strong-or-refreshing .center .sweet.clicked, .strong-or-refreshing .center .bitter.clicked, .sweet-or-bitter .center .strong.clicked, .sweet-or-bitter .center .refreshing.clicked, .sweet-or-bitter .center .sweet.clicked, .sweet-or-bitter .center .bitter.clicked {
+  background-color: white;
+  color: black;
+}
+/* line 147, ../sass/selector.scss */
+.strong-or-refreshing .center .strong, .strong-or-refreshing .center .bitter, .sweet-or-bitter .center .strong, .sweet-or-bitter .center .bitter {
+  margin-right: 100px;
+}
+
+/* line 159, ../sass/selector.scss */
+.strong-or-refreshing {
+  display: none;
+}
+
+/* line 162, ../sass/selector.scss */
+.sweet-or-bitter {
+  display: none;
+}
+
+/* line 166, ../sass/selector.scss */
+.suggestions {
+  display: none;
+}
+/* line 169, ../sass/selector.scss */
+.suggestions .center {
+  margin-top: 100px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 177, ../sass/selector.scss */
+.suggestions .center .drink-container .drink-tag {
+  text-align: left;
+  -webkit-transform: scale(1.8);
+  margin-right: 140px;
+}
+/* line 184, ../sass/selector.scss */
+.suggestions .center .drink-container .drink-tag p {
+  text-align: left;
+}
+/* line 189, ../sass/selector.scss */
+.suggestions .center .drink-tag:last-child {
+  margin-right: 0;
+}
+/* line 194, ../sass/selector.scss */
+.suggestions .something-else {
+  text-align: center;
+  pointer-events: auto;
+  display: block;
+  margin-top: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  width: 300px;
+  height: 100px;
+  border: 1px solid white;
+  padding-top: 8px;
 }
