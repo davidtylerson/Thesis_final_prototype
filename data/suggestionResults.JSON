@@ -4,8 +4,7 @@ var searchResults      = {
   {
     "name":"Negroni",
     "base":"Gin",
-    "profile":"Bitter",
-    "profile2":"Spirit Forward",
+    "profile":["Bitter","Spirit Forward"],
     "Glass":"Rocks",
     "glasstype":"images/rocks_icon.svg",
     "Mix":"Stirred",
@@ -18,8 +17,7 @@ var searchResults      = {
     {
     "name":"The Revolver",
     "base":"Bourbon",
-    "profile":"Bitter",
-    "profile2":"Spirit Forward",
+    "profile": ["Bitter","Spirit Forward"],
     "Glass":"Coupe",
     "glasstype":"images/coupe_icon.svg",
     "Mix":"Stirred",
@@ -32,8 +30,7 @@ var searchResults      = {
     {
     "name":"Boulevardier",
     "base":"Rye",
-    "profile":"Bitter",
-    "profile2":"Sweet",
+    "profile":["Bitter","Sweet"],
     "Glass":"Coupe",
     "glasstype":"images/coupe_icon.svg",
     "Mix":"Stirred",

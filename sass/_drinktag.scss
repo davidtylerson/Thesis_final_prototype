@@ -4,11 +4,13 @@
 	$menuleftmargin:40px;
 
 	.drink-tag{
+		z-index: 1;
 		float: left;
 		position: relative;
 		width:140px;
 		height:55px;
 		margin-bottom:5px;
+		margin-top:8px;
 
 		.glass-type{
 			display: inline-block;
@@ -30,7 +32,7 @@
 			z-index: -1;
 
 			.name{
-				font-size: 12px;
+				font-size: 11px;
 				color: $foregroundcolor;
 				font-family: "Gibson-SemiBold";
 				margin-top: 0;

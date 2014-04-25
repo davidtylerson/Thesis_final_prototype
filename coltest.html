@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+
+<script src="javascript/lodash.js"></script>
+<script src="allDrinks.js"></script>
+<script src="javascript/drinkFilter.js"></script>
+<script>
+
+	var filters = {
+		profile: ['Sweet', 'Bitter', 'Spirit Forward', 'Bubbly', 'Fruity', 'Sour'],
+		glass: ['Coupe', 'Collins', 'Rocks', 'Flute'],
+		spirit: ['Rye', 'Bourbon', 'Gin', 'Rum'],
+		mixMethod: ['Shaken', 'Stirred']
+	};
+
+
+	var results = updateResults(filters);
+
+	// to do: use amplifyjs to publish, passing the results object
+	// amplify.publish('resultsUpdated', results);
+	//
+	// in your view logic:
+	// amplify.subscribe('resultsUpdated', function (data) {
+	//   console.log(data); // this is your results object	
+	// })
+
+	console.log(results);
+
+</script>
+</body>
+</html>
