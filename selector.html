@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="stylesheets/search.css">
 
 
-		<script src="javascript/lodash.js"></script>
+	<script src="javascript/lodash.js"></script>
 	<script src="data/suggestionResults.js"></script>
 	<script src="javascript/addDrinkTags.js"></script>
 	<script src="javascript/drinkFilter.js"></script>
@@ -26,6 +26,7 @@
 
 	$(window).on("load",function(){
 		loaded();
+		makeItSuggest();
 
 		navScroll();
 		$('img').on('dragstart', function(event) { event.preventDefault(); });
@@ -57,23 +58,23 @@
 	//go to next question
 	$('.stir_btn').on('click', function(){
 		$('.shake_btn').css({opacity: 0});
-					setTimeout(
-					function() 
-					{
-						$(".shaken-or-stirred").fadeOut(1000);
-						$(".strong-or-refreshing").fadeIn(1000);
-					}, 800);
+		setTimeout(
+			function() 
+			{
+				$(".shaken-or-stirred").fadeOut(1000);
+				$(".strong-or-refreshing").fadeIn(1000);
+			}, 800);
 
 	})
 	//go to next question
 	$('.strong').on('click', function(){
 		$(this).addClass('clicked');
-						setTimeout(
-					function() 
-					{
-						$(".strong-or-refreshing").fadeOut(1000);
-						$(".sweet-or-bitter").fadeIn(1000);
-					}, 600);
+		setTimeout(
+			function() 
+			{
+				$(".strong-or-refreshing").fadeOut(1000);
+				$(".sweet-or-bitter").fadeIn(1000);
+			}, 600);
 	})
 
 			//go to next question
@@ -81,7 +82,7 @@
 				$(this).addClass('clicked');
 			})
 
-			//go to next question
+			//Show Drinks
 			$('.bitter').on('click', function(){
 				$(this).addClass('clicked');
 				setTimeout(
@@ -90,7 +91,7 @@
 						$(".sweet-or-bitter").fadeOut(1000);
 						$(".suggestions").fadeIn(1000);
 					}, 600);
-				makeItRain();
+				//makeItRain();
 			})
 
 			//go to next question
@@ -99,7 +100,17 @@
 
 			})
 
+			$(".something-else").on('click', function(){
+					$(".drink-container").html("");
+					makeItSuggest();
 
+			})
+
+			$(".start-over").on('click', function(){
+				$('.sweet', '.bitter', '.refreshing', '.strong').removeClass('clicked');
+				$('.suggestions').fadeOut(1000);
+				$(".location-question").fadeIn(1000);
+			})
 		});
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
@@ -192,7 +203,19 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 
 				</div>
 			</div>
-			<a href="search.html"><div class="something-else">I think I want something else</div></a>
+			<div class="something-else">
+				<p>Not Quite</p>
+			</div>
+			<div class="left-right-btns">
+				<div class="start-over">
+					<img src="images/left_arrows.svg">
+					<h3>Start Over</h3>
+				</div>
+				<a href="search.html"><div class="more">
+					<img src="images/right_arrows.svg">
+					<h3>More Choices</h3>
+				</div></a>
+			</div>
 		</div>
 
 
@@ -204,20 +227,20 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 
 
 	<!-- TEMPLATES -->
-    <script id="resultsTemplate" type="template">
-        <div class="drink-tag">
-	        <div class='glass-type'><img src='<%= glasstype %>'></div>
-	        <a href='<%= Recipe %>_recipe.html'>
-	            <div class='box'>
-	                <p class='name'><%= name %></p>
-	                <p class='base'>Base Spirit: <%= base %></p>
-	                <p class='profile'>Profile: <%= profile %></p>
-	            </div>
-	        </a>
-        </div>
-    </script>
+	<script id="resultsTemplate" type="template">
+	<div class="drink-tag">
+	<div class='glass-type'><img src='<%= glasstype %>'></div>
+	<a href='<%= Recipe %>_recipe.html'>
+	<div class='box'>
+	<p class='name'><%= name %></p>
+	<p class='base'>Base Spirit: <%= base %></p>
+	<p class='profile'>Profile: <%= profile %></p>
+	</div>
+	</a>
+	</div>
+	</script>
 
-    <!-- SCRIPT -->
+	<!-- SCRIPT -->
 	<script src="javascript/addDrinkTags.js"></script>
 
 

@@ -3,167 +3,167 @@
 	@import 'clock';
 
 	.image_wrapper {
-	//display: none;
-	position: absolute;
-	z-index: 1;
-	height: 800px;
-	width: 1280px;
-	overflow: hidden;
-	opacity: .1;
-	transition: 3s ;
-}
+		//display: none;
+		position: absolute;
+		z-index: 1;
+		height: 800px;
+		width: 1280px;
+		overflow: hidden;
+		opacity: .1;
+		transition: 3s ;
+	}
 
 
-#image_scroller {
-	position: absolute;
-	width: 7680px;
-	height: 100%;
+	#image_scroller {
+		position: absolute;
+		width: 7680px;
+		height: 100%;
 
-}
+	}
 
-#image_scroller ul {
-	list-style: none;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
+	#image_scroller ul {
+		list-style: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
 
-#image_scroller li {
-	float: left;
+	#image_scroller li {
+		float: left;
 
-}
+	}
 
-.location-question{
-	//display: none;
+	.location-question{
+		//display: none;
+		.content-wrapper{
+			pointer-events:none;
+		}
+	}
+
 	.content-wrapper{
-		pointer-events:none;
-	}
-}
 
-.content-wrapper{
-
-	display:inline block;
-	display: none;
-	z-index: 2;
-	position: fixed;
-	top: 200px;
-	left: 190px;
-	width: 900px;
+		display:inline block;
+		display: none;
+		z-index: 2;
+		position: fixed;
+		top: 200px;
+		left: 190px;
+		width: 900px;
 
 
-	p{
-		margin-left: auto;
-		margin-right: auto;
-		text-align:center;
-		font-size: 70px;
-	}
-
-	.location_btn{
-		pointer-events:auto;
-		display:block;
-		font-family: "Gibson-light";
-		margin-top:300px;
-		margin-left:auto;
-		margin-right:auto;
-		font-size: 50px;
-		width: 150px;
-		padding: 8px 0 0 22px;
-		height:70px;
-		border: 2px solid white;
-
-	}
-
-
-
-
-}
-
-
-
-.shaken-or-stirred{
-	display: none;
-
-	.center{
-		margin-top: 100px;
-		width: 400px;
-		margin-left:auto;
-		margin-right:auto;
-
-		.shake_btn{
-			float: left;
-			width: 100px;
-			height: 261px;
-			margin-right: 100px;	
-			transition: 1s ;
-
-			img{
-				width: 100%;
-			}
+		p{
+			margin-left: auto;
+			margin-right: auto;
+			text-align:center;
+			font-size: 70px;
 		}
-		.stir_btn{
-			float: right;
-			width: 110px;
-			height: 230px;
-			transition: 1s ;
 
-			img{
-				height: 100%;
+		.location_btn{
+			pointer-events:auto;
+			display:block;
+			font-family: "Gibson-light";
+			margin-top:300px;
+			margin-left:auto;
+			margin-right:auto;
+			font-size: 50px;
+			width: 150px;
+			padding: 8px 0 0 22px;
+			height:70px;
+			border: 2px solid white;
 
-			}
 		}
+
+
+
+
 	}
-}
 
 
-.strong-or-refreshing, .sweet-or-bitter{
 
-	p{ 
-		font-size: 50px}
+	.shaken-or-stirred{
+		display: none;
 
 		.center{
 			margin-top: 100px;
-			width: 520px;
+			width: 400px;
 			margin-left:auto;
 			margin-right:auto;
 
-			.strong, .refreshing, .sweet, .bitter{
+			.shake_btn{
 				float: left;
-				width: 210px;
-				height: 210px;
-				border-radius: 105px;
-				border: 5px solid white;
-				transition: 1s ;
-				text-align: center;
-				font-size: 30px;
-				padding-top: 85px;
-
-				&.clicked{
-					background-color:$foregroundcolor ;
-					color: $backgroundcolor;
-				}
-
-			}
-
-			.strong, .bitter{
-
+				width: 100px;
+				height: 261px;
 				margin-right: 100px;	
+				transition: 1s ;
 
+				img{
+					width: 100%;
+				}
 			}
+			.stir_btn{
+				float: right;
+				width: 110px;
+				height: 230px;
+				transition: 1s ;
 
-			.refreshing{
+				img{
+					height: 100%;
+
+				}
 			}
 		}
 	}
 
 
-	.strong-or-refreshing{
-		display: none;
-	}
-	.sweet-or-bitter{
-		display: none;
-	}
+	.strong-or-refreshing, .sweet-or-bitter{
 
-	.suggestions{
+		p{ 
+			font-size: 50px}
+
+			.center{
+				margin-top: 100px;
+				width: 520px;
+				margin-left:auto;
+				margin-right:auto;
+
+				.strong, .refreshing, .sweet, .bitter{
+					float: left;
+					width: 210px;
+					height: 210px;
+					border-radius: 105px;
+					border: 5px solid white;
+					transition: 1s ;
+					text-align: center;
+					font-size: 30px;
+					padding-top: 85px;
+
+					&.clicked{
+						background-color:$foregroundcolor ;
+						color: $backgroundcolor;
+					}
+
+				}
+
+				.strong, .bitter{
+
+					margin-right: 100px;	
+
+				}
+
+				.refreshing{
+				}
+			}
+		}
+
+
+		.strong-or-refreshing{
+			display: none;
+		}
+		.sweet-or-bitter{
+			display: none;
+		}
+
+		.suggestions{
 		display: none;
 
 		.center{
@@ -187,24 +187,74 @@
 					}
 				}
 				}.drink-tag:last-child { margin-right:0 }
-			
+
 
 			}
-		
+
 			.something-else{
 				text-align: center;
-				pointer-events:auto;
+				//pointer-events:auto;
 				display:block;
-				//font-family: "Gibson-light";
-				margin-top:350px;
+				margin-top:280px;
 				margin-left:auto;
 				margin-right:auto;
-				font-size: 40px;
-				width: 300px;
-				height:100px;
-				border: 1px solid white;
-				padding-top: 8px;
+				padding-top: 75px;
+				width: 180px;
+				height:180px;
+				border-radius: 100px;
+				border: 2px solid white;
+
+
+				p{
+
+					font-size: 25px;
+
+
+				}
 			}
+
+			.left-right-btns{
+				z-index: -1;
+				position: absolute;
+				top: 410px;
+				width: 900px;
+				height: 60px;
+				h3{
+					margin-top: 21px;
+				}
+
+
+				.start-over{
+					float: left;
+
+					img{
+						float: left;
+						height: 60px;
+						margin-right: 10px;
+					}
+
+					h3{
+						float: left;
+					}
+
+
+				}
+				.more{
+					float: right;
+
+					img{
+						float: right;
+						height: 60px;
+						margin-left: 10px;
+					}
+					h3{
+						float: right;
+					}
+
+
+				}
+			}
+
 		}
 
 

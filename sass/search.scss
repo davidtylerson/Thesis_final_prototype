@@ -92,7 +92,7 @@
 		color: $foregroundcolor;
 
 		.radio-container{
-			height: 30px;
+			height: 40px;
 			margin-bottom: 10px;
 
 			input[type=radio] {
@@ -104,12 +104,12 @@
 				text-align: center;
 				float: left;
 				margin:0px;
-				padding: 6px;
+				padding: 12px;
 				background-color: $backgroundcolor;
 				color:$foregroundcolor;
 				border: 1px solid white;
 				width:200px;
-				height: 30px;
+				height: 40px;
 			}
 
 			input[type=radio]:checked + label { 
@@ -120,13 +120,13 @@
 				color: $backgroundcolor;
 				border: 1px solid white;
 				width:200px;
-				height: 30px;
+				height: 40px;
 			}
 
 		}
 
 		.checkbox-container{
-			height: 70px;
+			height: 90px;
 			margin-bottom: 10px;
 
 			input[type=checkbox] {
@@ -139,12 +139,12 @@
 				font-family: "Gibson-light";
 				text-align: center;
 				float: left;
-				padding-top: 5px;
+				padding-top: 10px;
 				background-color: $backgroundcolor;
 				color:$foregroundcolor;
 				border: 1px solid white;
 				width:70px;
-				height: 30px;
+				height: 40px;
 			}
 
 			input[type=checkbox] + label:nth-child(5n+5){margin-right: 0px;}
@@ -157,7 +157,7 @@
 				color: $backgroundcolor;
 				border: 1px solid white;
 				width:70px;
-				height: 30px;
+				height: 40px;
 			}
 		}
 
@@ -191,20 +191,37 @@
 					float: left;
 					width:40px;
 					height: 70px;
-					opacity: .5;
-
-					.img{
-						width: 100%;
-						height:100%;
-					}
+					//opacity: .5;
+				
+					// .img{
+					// 	width: 100%;
+					// 	height:100%;
+					//}
 				}
 
 				input[type=checkbox]:checked + label { 
 					float: left;
 					width:40px;
 					height: 70px;
-					opacity: 1;
+					//opacity: 1;
 				}
+		
+#collins-checkbox{
+			input[type=checkbox] + label {background-image:url("../images/collins_checkbox.svg");}
+			input[type=checkbox]:checked + label { background-image:url("../images/collins_checkbox_checked.svg");}
+}
+#flute-checkbox{
+			input[type=checkbox] + label {background-image:url("../images/flute_checkbox.svg");}
+			input[type=checkbox]:checked + label { background-image:url("../images/flute_checkbox_checked.svg");}
+}
+#coupe-checkbox{
+			input[type=checkbox] + label {background-image:url("../images/coupe_checkbox.svg");}
+			input[type=checkbox]:checked + label { background-image:url("../images/coupe_checkbox_checked.svg");}	
+}
+#rocks-checkbox{
+			input[type=checkbox] + label {background-image:url("../images/rocks_checkbox.svg");}
+			input[type=checkbox]:checked + label { background-image:url("../images/rocks_checkbox_checked.svg");}	
+}
 			}
 
 			.mix-checkbox{
@@ -217,16 +234,14 @@
 				}
 
 				input[type=checkbox] + label {
-					margin-right:30px;
+					margin-left:10px;
+					margin-right:15px;
 					float: left;
 					width:40px;
 					height: 70px;
 					opacity: .5;
 
-					.img{
-						width: 100%;
-						height:100%;
-					}
+
 				}
 
 				input[type=checkbox] + label:last-child{margin-right: 0px;}

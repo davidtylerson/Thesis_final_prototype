@@ -314,14 +314,57 @@ h4 {
 /* line 194, ../sass/selector.scss */
 .suggestions .something-else {
   text-align: center;
-  pointer-events: auto;
   display: block;
-  margin-top: 350px;
+  margin-top: 280px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 40px;
-  width: 300px;
-  height: 100px;
-  border: 1px solid white;
-  padding-top: 8px;
+  padding-top: 75px;
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  border: 2px solid white;
+}
+/* line 208, ../sass/selector.scss */
+.suggestions .something-else p {
+  font-size: 25px;
+}
+/* line 216, ../sass/selector.scss */
+.suggestions .left-right-btns {
+  z-index: -1;
+  position: absolute;
+  top: 410px;
+  width: 900px;
+  height: 60px;
+}
+/* line 222, ../sass/selector.scss */
+.suggestions .left-right-btns h3 {
+  margin-top: 21px;
+}
+/* line 227, ../sass/selector.scss */
+.suggestions .left-right-btns .start-over {
+  float: left;
+}
+/* line 230, ../sass/selector.scss */
+.suggestions .left-right-btns .start-over img {
+  float: left;
+  height: 60px;
+  margin-right: 10px;
+}
+/* line 236, ../sass/selector.scss */
+.suggestions .left-right-btns .start-over h3 {
+  float: left;
+}
+/* line 242, ../sass/selector.scss */
+.suggestions .left-right-btns .more {
+  float: right;
+}
+/* line 245, ../sass/selector.scss */
+.suggestions .left-right-btns .more img {
+  float: right;
+  height: 60px;
+  margin-left: 10px;
+}
+/* line 250, ../sass/selector.scss */
+.suggestions .left-right-btns .more h3 {
+  float: right;
 }

@@ -137,7 +137,7 @@ img {
 .recipe-area .header {
   width: 100%;
   height: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 /* line 30, ../sass/recipe-screen.scss */
 .recipe-area .header .top {
@@ -185,7 +185,7 @@ img {
   font-size: 18px;
   color: white;
   font-family: "Gibson-light";
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 /* line 80, ../sass/recipe-screen.scss */
 .recipe-area .header .bottom .right {
@@ -194,32 +194,34 @@ img {
 /* line 83, ../sass/recipe-screen.scss */
 .recipe-area .header .bottom .right .static {
   float: left;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 20px;
   background-image: url(../images/recipe_static.svg);
-  opacity: .3;
+  background-size: 60px 60px;
+  opacity: .5;
 }
-/* line 93, ../sass/recipe-screen.scss */
+/* line 94, ../sass/recipe-screen.scss */
 .recipe-area .header .bottom .right .interactive {
   float: left;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 20px;
   background-image: url(../images/recipe_interactive.svg);
-  margin-right: 5px;
+  background-size: 60px 60px;
+  margin-right: 10px;
 }
-/* line 105, ../sass/recipe-screen.scss */
+/* line 107, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe {
   display: none;
 }
-/* line 109, ../sass/recipe-screen.scss */
+/* line 111, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step {
   float: left;
   width: 150px;
   margin-right: 17px;
 }
-/* line 114, ../sass/recipe-screen.scss */
+/* line 116, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .header {
   width: 100%;
   height: 25px;
@@ -227,77 +229,77 @@ img {
   border-bottom: 1px solid white;
   padding-top: 4px;
 }
-/* line 123, ../sass/recipe-screen.scss */
+/* line 125, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .add {
   width: 150px;
   height: 170px;
   background-image: url(../images/step_add_mixing.svg);
   margin-bottom: 40px;
 }
-/* line 130, ../sass/recipe-screen.scss */
+/* line 132, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .add {
   width: 150px;
   height: 170px;
   background-image: url(../images/step_add_mixing.svg);
   margin-bottom: 40px;
 }
-/* line 138, ../sass/recipe-screen.scss */
+/* line 140, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .stir {
   width: 150px;
   height: 170px;
   background-image: url(../images/step_stir_mixing.svg);
   margin-bottom: 40px;
 }
-/* line 146, ../sass/recipe-screen.scss */
+/* line 148, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .rinse {
   width: 150px;
   height: 170px;
   background-image: url(../images/step_rinse_rocks.svg);
   margin-bottom: 40px;
 }
-/* line 154, ../sass/recipe-screen.scss */
+/* line 156, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .strain {
   width: 150px;
   height: 170px;
   background-image: url(../images/step_strain_rocks.svg);
   margin-bottom: 40px;
 }
-/* line 162, ../sass/recipe-screen.scss */
+/* line 164, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .garnish {
   width: 150px;
   height: 170px;
   background-image: url(../images/step_add_rocks.svg);
   margin-bottom: 40px;
 }
-/* line 170, ../sass/recipe-screen.scss */
+/* line 172, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step p {
-  font-size: 9px;
+  font-size: 12px;
   color: white;
   font-family: "Gibson-light";
   margin-bottom: 5px;
 }
-/* line 177, ../sass/recipe-screen.scss */
+/* line 179, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .left {
   width: 65px;
   height: 65px;
   float: left;
   margin-right: 20px;
 }
-/* line 183, ../sass/recipe-screen.scss */
+/* line 185, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .left p {
   text-align: right;
 }
-/* line 189, ../sass/recipe-screen.scss */
+/* line 191, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .right {
   width: 65px;
   height: 65px;
   float: left;
 }
-/* line 194, ../sass/recipe-screen.scss */
+/* line 196, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .right p {
   text-align: left;
 }
-/* line 199, ../sass/recipe-screen.scss */
+/* line 201, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step .dot {
   width: 10px;
   height: 10px;
@@ -305,17 +307,17 @@ img {
   margin-left: 70px;
   background-color: white;
 }
-/* line 208, ../sass/recipe-screen.scss */
+/* line 210, ../sass/recipe-screen.scss */
 .recipe-area .static-recipe .step:last-child {
   margin-right: 0px;
 }
-/* line 215, ../sass/recipe-screen.scss */
+/* line 217, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe #next {
   position: absolute;
   top: 410px;
   left: 780px;
 }
-/* line 226, ../sass/recipe-screen.scss */
+/* line 228, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-circle, .recipe-area .interactive-recipe .left-circle-fill {
   position: absolute;
   width: 200px;
@@ -325,16 +327,16 @@ img {
   top: 350px;
   left: 100px;
 }
-/* line 236, ../sass/recipe-screen.scss */
+/* line 238, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-circle-fill {
   background-color: white;
 }
-/* line 239, ../sass/recipe-screen.scss */
+/* line 241, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-circle-fill .glass-icon {
   margin-left: 80px;
   margin-top: 35px;
 }
-/* line 243, ../sass/recipe-screen.scss */
+/* line 245, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-circle-fill h3 {
   color: black;
   width: 150px;
@@ -342,7 +344,7 @@ img {
   margin-top: 15px;
   margin-left: 25px;
 }
-/* line 254, ../sass/recipe-screen.scss */
+/* line 256, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-add .add-leader {
   position: absolute;
   left: 200px;
@@ -351,7 +353,7 @@ img {
   height: 300px;
   background-color: white;
 }
-/* line 263, ../sass/recipe-screen.scss */
+/* line 265, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-add .left {
   position: absolute;
   top: 150px;
@@ -360,7 +362,7 @@ img {
   height: 100px;
   text-align: right;
 }
-/* line 272, ../sass/recipe-screen.scss */
+/* line 274, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-add .right {
   position: absolute;
   top: 150px;
@@ -368,14 +370,14 @@ img {
   width: 130px;
   height: 100px;
 }
-/* line 280, ../sass/recipe-screen.scss */
+/* line 282, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-add p {
   font-size: 18px;
   color: white;
   font-family: "Gibson-light";
   margin-bottom: 5px;
 }
-/* line 288, ../sass/recipe-screen.scss */
+/* line 290, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-content {
   position: absolute;
   top: 160px;
@@ -383,16 +385,16 @@ img {
   width: 385px;
   height: 210px;
 }
-/* line 295, ../sass/recipe-screen.scss */
+/* line 297, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-content .left-leader {
   float: left;
   margin-top: 112px;
 }
-/* line 300, ../sass/recipe-screen.scss */
+/* line 302, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-content .left-gif-container {
   margin-left: 105px;
 }
-/* line 303, ../sass/recipe-screen.scss */
+/* line 305, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-content .left-gif-container .header {
   padding-top: 2px;
   width: 280px;
@@ -401,22 +403,22 @@ img {
   border-bottom: 1px solid white;
   margin-bottom: 2px;
 }
-/* line 312, ../sass/recipe-screen.scss */
+/* line 314, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-content .left-gif-container h4 {
   margin-bottom: 2px;
 }
-/* line 316, ../sass/recipe-screen.scss */
+/* line 318, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-content .left-gif-container .gif {
   width: 280px;
   height: 172px;
   background-color: white;
 }
-/* line 320, ../sass/recipe-screen.scss */
+/* line 322, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .left-content .left-gif-container .gif img {
   width: 100%;
   height: 100%;
 }
-/* line 331, ../sass/recipe-screen.scss */
+/* line 333, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-circle, .recipe-area .interactive-recipe .right-circle-fill {
   position: absolute;
   width: 180px;
@@ -426,16 +428,16 @@ img {
   top: 360px;
   left: 550px;
 }
-/* line 341, ../sass/recipe-screen.scss */
+/* line 343, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-circle-fill {
   background-color: white;
 }
-/* line 344, ../sass/recipe-screen.scss */
+/* line 346, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-circle-fill .glass-icon {
   margin-left: 68px;
   margin-top: 18px;
 }
-/* line 348, ../sass/recipe-screen.scss */
+/* line 350, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-circle-fill h3 {
   color: black;
   width: 130px;
@@ -443,7 +445,7 @@ img {
   margin-top: 10px;
   margin-left: 21px;
 }
-/* line 358, ../sass/recipe-screen.scss */
+/* line 360, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-content {
   position: absolute;
   top: 125px;
@@ -451,16 +453,16 @@ img {
   width: 385px;
   height: 210px;
 }
-/* line 365, ../sass/recipe-screen.scss */
+/* line 367, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-content .right-leader {
   float: left;
   margin-top: 112px;
 }
-/* line 370, ../sass/recipe-screen.scss */
+/* line 372, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-content .right-gif-container {
   margin-left: 90px;
 }
-/* line 373, ../sass/recipe-screen.scss */
+/* line 375, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-content .right-gif-container .header {
   padding-top: 2px;
   width: 280px;
@@ -469,28 +471,28 @@ img {
   border-bottom: 1px solid white;
   margin-bottom: 2px;
 }
-/* line 382, ../sass/recipe-screen.scss */
+/* line 384, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-content .right-gif-container h4 {
   margin-bottom: 2px;
 }
-/* line 386, ../sass/recipe-screen.scss */
+/* line 388, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-content .right-gif-container .gif {
   width: 280px;
   height: 172px;
   background-color: white;
 }
-/* line 390, ../sass/recipe-screen.scss */
+/* line 392, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .right-content .right-gif-container .gif img {
   width: 100%;
   height: 100%;
 }
-/* line 402, ../sass/recipe-screen.scss */
+/* line 404, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .lr-arrow {
   position: absolute;
   top: 450px;
   left: 380px;
 }
-/* line 408, ../sass/recipe-screen.scss */
+/* line 410, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .center-content {
   position: absolute;
   top: 100px;
@@ -498,7 +500,7 @@ img {
   width: 280px;
   height: 210px;
 }
-/* line 419, ../sass/recipe-screen.scss */
+/* line 421, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .center-content .center-gif-container .header {
   padding-top: 2px;
   width: 280px;
@@ -507,46 +509,46 @@ img {
   border-bottom: 1px solid white;
   margin-bottom: 2px;
 }
-/* line 428, ../sass/recipe-screen.scss */
+/* line 430, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .center-content .center-gif-container h4 {
   margin-bottom: 2px;
 }
-/* line 432, ../sass/recipe-screen.scss */
+/* line 434, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .center-content .center-gif-container .gif {
   width: 280px;
   height: 172px;
   background-color: white;
 }
-/* line 436, ../sass/recipe-screen.scss */
+/* line 438, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .center-content .center-gif-container .gif img {
   width: 100%;
   height: 100%;
 }
-/* line 452, ../sass/recipe-screen.scss */
+/* line 454, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .step-two {
   display: none;
 }
-/* line 458, ../sass/recipe-screen.scss */
+/* line 460, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .step-three {
   display: none;
 }
-/* line 462, ../sass/recipe-screen.scss */
+/* line 464, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .step-four {
   display: none;
 }
-/* line 466, ../sass/recipe-screen.scss */
+/* line 468, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .step-five {
   display: none;
 }
-/* line 470, ../sass/recipe-screen.scss */
+/* line 472, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .step-six {
   display: none;
 }
-/* line 474, ../sass/recipe-screen.scss */
+/* line 476, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .step-seven {
   display: none;
 }
-/* line 478, ../sass/recipe-screen.scss */
+/* line 480, ../sass/recipe-screen.scss */
 .recipe-area .interactive-recipe .step-eight {
   display: none;
 }

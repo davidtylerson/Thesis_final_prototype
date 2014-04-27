@@ -254,14 +254,24 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 							<div class="glass-header">
 								<div class="title">Glass Type</div>
 							</div>
-							<input type="checkbox" id="Collins" name="Glass" value="Collins">
-							<label for="Collins"><img src="images/collins_checkbox.svg"></label>
-							<input type="checkbox" id="Flute" name="Glass" value="Flute">
-							<label for="Flute"><img src="images/flute_checkbox.svg"></label>
-							<input type="checkbox" id="Coupe" name="Glass" value="Coupe">
-							<label for="Coupe"><img src="images/coupe_checkbox.svg"></label>
-							<input type="checkbox" id="Rocks" name="Glass" value="Rocks">
-							<label for="Rocks"><img src="images/rocks_checkbox.svg"></label>
+							<div id="collins-checkbox">
+								<input type="checkbox" id="Collins" name="Glass" value="Collins">
+								<label for="Collins"></label>
+							</div>
+
+							<div id="flute-checkbox">
+								<input type="checkbox" id="Flute" name="Glass" value="Flute">
+								<label for="Flute"><img src="images/flute_checkbox.svg"></label>
+							</div>
+							<div id="coupe-checkbox">
+								<input type="checkbox" id="Coupe" name="Glass" value="Coupe">
+
+								<label for="Coupe"><img src="images/coupe_checkbox.svg"></label>
+							</div>
+							<div id="rocks-checkbox">
+								<input type="checkbox" id="Rocks" name="Glass" value="Rocks">
+								<label for="Rocks"><img src="images/rocks_checkbox.svg"></label>
+							</div>
 						</div>
 					</form>
 
@@ -271,14 +281,14 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 								<div class="title">Shaken or Stirred</div>
 							</div>
 							<input type="checkbox" id="Shaken" name="Mix" value="Shaken">
-							<label for="Shaken"><img src="images/shaker_radio.svg"></label>
+							<label for="Shaken"><img src="images/gifs/shake_line_small.gif"></label>
 							<input type="checkbox" id="Stirred" name="Mix" value="Stirred">
-							<label for="Stirred"><img src="images/stir_radio.svg"></label>
+							<label for="Stirred"><img src="images/gifs/stir_line_small.gif"></label>
 						</div>
 					</form>
 
 				</div>
-
+			<!-- Range Slider 
 				<div class="tolerance-header">
 					<div class="title">Recipe Tolerance</div>
 				</div>
@@ -288,6 +298,7 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 					<input type="range" name="points" min="0" max="4" value="4" list="tolsettings">
 
 				</form>
+			-->
 			</div>
 
 		</div>
